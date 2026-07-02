@@ -1,0 +1,6 @@
+﻿# Temp files
+temp_*.py
+*.pyc
+__pycache__/
+.DS_Store
+Thumbs.db
