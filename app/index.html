@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>小升初暑期作业 · 七年级预习计划</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/enhanced.css">
+<link rel="stylesheet" href="css/learn.css">
+<style>
+.loading-bar { height:3px;background:#E2E8F0;position:fixed;top:0;left:0;right:0;z-index:999; }
+.loading-bar .fill { height:100%;background:linear-gradient(90deg,#D94A4A,#2B6CB0,#38A169);width:0;animation:loadProgress 1.5s ease forwards; }
+@keyframes loadProgress { 0%{width:0%} 100%{width:100%} }
+</style>
+</head>
+<body>
+<div class="loading-bar"><div class="fill"></div></div>
+
+<div class="header">
+  <h1>📚 小升初·七年级预习计划</h1>
+  <div class="subtitle">重庆市两江巴蜀中学 · 30天自学提升 · 含完整课文+教师批注</div>
+</div>
+
+<div class="day-nav">
+  <button class="nav-btn" id="prevDay">‹</button>
+  <div class="day-info">
+    <div class="day-num" id="dayNum">第1天</div>
+    <div class="day-date" id="dayDate">7月2日 周四</div>
+    <div class="day-progress" id="dayDifficulty">难度：中等</div>
+  </div>
+  <button class="nav-btn" id="nextDay">›</button>
+</div>
+
+<div style="margin:-6px 12px 10px;font-size:0.82rem;color:#4A5568;background:#EBF8FF;padding:8px 12px;border-radius:8px;text-align:center;" id="dayFocus"></div>
+
+<div class="summary-bar" id="summaryBar">
+  <div class="summary-item chinese"><div class="label">📖 语文</div><div class="value">0/0</div></div>
+  <div class="summary-item math"><div class="label">📐 数学</div><div class="value">0/0</div></div>
+  <div class="summary-item english"><div class="label">🌍 英语</div><div class="value">0/0</div></div>
+</div>
+
+<div class="day-selector" id="daySelector"></div>
+
+<div class="subject-tabs" id="subjectTabs">
+  <button class="subject-tab chinese active">📖 语文</button>
+  <button class="subject-tab math">📐 数学</button>
+  <button class="subject-tab english">🌍 英语</button>
+</div>
+
+<div class="content-area" id="contentArea">
+  <div class="day-content active" id="dayContent">
+    <div class="loading"><div class="spinner"></div>内容加载中...</div>
+  </div>
+</div>
+
+<div class="progress-panel" id="progressPanel"></div>
+
+<div class="bottom-nav">
+  <button id="showProgress"><span class="icon">📊</span><span>进度</span></button>
+  <button onclick="App.goToDay(1)"><span class="icon">🏠</span><span>首页</span></button>
+  <button onclick="App.showDayReport(App.currentDay)"><span class="icon">📋</span><span>报告</span></button>
+  <button id="showMastery"><span class="icon">⭐</span><span>掌握度</span></button>
+  <button id="showParentDash"><span class="icon">👨‍👩‍👧</span><span>家长看板</span></button>
+  <button id="showOverallReport"><span class="icon">🏆</span><span>总报告</span></button>
+</div>
+
+<div class="modal-overlay" id="progressModal">
+  <div class="modal-content">
+    <div class="modal-handle"></div>
+    <div class="modal-title">📊 学习进度总览</div>
+    <div id="modalProgress"></div>
+    <div style="margin-top:16px;"><h3 style="font-size:0.9rem;margin-bottom:8px;">📅 每日完成详情</h3><div id="dailyProgressList"></div></div>
+  </div>
+</div>
+
+<div style="text-align:center;padding:16px;font-size:0.75rem;color:#A0AEC0;margin-bottom:60px;">
+  重庆市两江巴蜀中学七年级预习计划 · 30天暑期提升<br>
+  每课含完整课文+教师批注+互动答题+语音识别 · 无教科书也能学
+</div>
+
+<!-- 【加载顺序：数据→引擎→增强→评估→课文】 -->
+<script src="js/init.js"></script>
+<script src="js/c1.js"></script>
+<script src="js/c2.js"></script>
+<script src="js/c3.js"></script>
+<script src="js/c4.js"></script>
+<script src="js/c5.js"></script>
+<script src="js/app.js"></script>
+<script src="js/app-fix.js"></script>
+<script src="js/enhanced.js"></script>
+<script src="js/opening.js"></script>
+<script src="js/tracker.js"></script>
+<script src="js/tracker-ui.js"></script>
+<script src="js/mastery.js"></script>
+<script src="js/mastery-ui.js"></script>
+<script src="js/learn-engine.js"></script>
+<script src="js/english-enhanced.js"></script>
+<script src="js/integrate.js"></script>
+<script src="js/textbook.js"></script>
+<script src="js/textbook-content.js"></script>
+<script src="js/inject-textbook.js"></script>
+<script src="js/stories.js"></script>
+<script src="js/inject-stories.js"></script>
+</body>
+</html>
