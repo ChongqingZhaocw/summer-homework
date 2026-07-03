@@ -24,19 +24,60 @@
   function getMethodContent(dayNum, subject) {
     var week = getWeekInfo(dayNum);
     if (!week) return "";
-
+    var html = "";
+    // 英语和语文每天增加主动回忆环节
+    if (subject === "english" || subject === "chinese") {
+      html += renderActiveRecall(subject, dayNum);
+    }
+    // 数学增加思维导图提示（适合整理公式和概念）
+    if (subject === "math") {
+      html += renderMathMindmapTip(dayNum);
+    }
     switch(week.method) {
       case "feynman":
-        return renderFeynmanContent(subject);
-      case "pomodoro":
-        return renderPomodoroBanner(dayNum);
+        html += renderFeynmanContent(subject);
+        break;
       case "mindmap":
-        return renderMindmapTip(subject);
+        html += renderMindmapTip(subject);
+        break;
       case "recall":
-        return renderRecallPrompt(dayNum);
-      default:
-        return "";
+        html += renderRecallPrompt(dayNum);
+        break;
     }
+    return html;
+  }
+
+  function renderMathMindmapTip(dayNum) {
+    return `<div class="active-recall" style="background:#FAF5FF;border:2px solid #D6BCFA;">
+      <div class="recall-header" onclick="this.parentElement.classList.toggle('expanded')">
+        <span style="font-size:1.3rem;">🧠</span>
+        <div><strong>思维导图 · 数学公式整理</strong>
+        <div style="font-size:0.75rem;color:#718096;font-weight:400;">把今天学的公式画成图，更好记！</div></div>
+        <span style="font-size:0.8rem;color:#718096;">👆点击展开</span>
+      </div>
+      <div class="recall-body">
+        <div class="recall-exercise" style="background:#FAF5FF;">
+          <div class="recall-num">❶</div>
+          <div>在笔记本中央写下今天的<strong>核心概念/公式</strong></div>
+        </div>
+        <div class="recall-exercise" style="background:#FAF5FF;">
+          <div class="recall-num">❷</div>
+          <div>画出<strong>3-5个分支</strong>：定义、公式、例子、注意事项、易错点</div>
+        </div>
+        <div class="recall-exercise" style="background:#FAF5FF;">
+          <div class="recall-num">❸</div>
+          <div>每个分支写<strong>关键词</strong>，不要写长句子</div>
+        </div>
+        <div class="recall-exercise" style="background:#FAF5FF;">
+          <div class="recall-num">❹</div>
+          <div>用<strong>不同颜色</strong>区分不同的分支（公式用红色，例子用蓝色…）</div>
+        </div>
+        <div style="margin-top:6px;padding:8px 10px;background:#EBF8FF;border-radius:8px;font-size:0.82rem;">
+          💡 <strong>例子：</strong>学完「绝对值」→ 中心写|a|→分支1:定义(到原点距离)→分支2:公式(|a|=a当a≥0,|a|=-a当a<0)→分支3:例子(|5|=5,|-3|=3)→分支4:易错(0的绝对值是0)
+        </div>
+        <div class="recall-done" onclick="this.textContent='✅ 已完成思维导图';this.style.background='#C6F6D5';this.style.color='#276749';">👆 点击标记：已完成思维导图</div>
+      </div>
+    </div>`;
   }
 
   // ===== 费曼学习法内容 =====
