@@ -12,7 +12,7 @@ $cssFiles = @("style.css","enhanced.css","learn.css")
 
 # JS文件列表（按加载顺序）
 $jsFiles = @(
-  "init.js","c1.js","c2.js","c3.js","c4.js","c5.js",
+  "init.js","c1.js","c2.js","day3-4.js","c3.js","c4.js","c5.js",
   "app.js","app-fix.js","enhanced.js","opening.js",
   "tracker.js","tracker-ui.js","mastery.js","mastery-ui.js",
   "learn-engine.js","english-enhanced.js","integrate.js",
@@ -85,4 +85,5 @@ Write-Host "  1. 把这个文件发送给学生（微信/QQ/AirDrop）"
 Write-Host "  2. 学生用Safari打开（保存到'文件'App后打开）"
 Write-Host "  3. 所有功能离线可用！无需网络、无需服务器"
 Write-Host "  4. 学习进度自动保存在iPad本地，不会丢失"
+
 
