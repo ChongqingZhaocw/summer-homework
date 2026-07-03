@@ -1565,7 +1565,7 @@ var COURSE_DATA = [];
           {icon:"🌡️",label:"会用正负数表示生活中的量",desc:"温度、收支、海拔—这些都是中考应用题"},
           {icon:"📊",label:"掌握正负数的分类方法",desc:"给一组数能快速分出正数集合和负数集合"},
           {icon:"🧮",label:"理解0为什么既不是正数也不是负数",desc:"这是考试第一道陷阱题！"}
-        ],why:"为什么要学正负数？\n想象一下：如果没有负数，冬天零下5℃怎么表示？欠别人100块钱怎么记账？海平面以下的山脉怎么测量高度？\n\n负数的发明让数学从"看得见"（数东西）变成了"想得到"（抽象概念）——这是数学思维的一大步！\n\n而且——两江巴蜀中学的第一次月考，正负数分类必考10分以上！"},
+        ],why:"为什么要学正负数？\n想象一下：如果没有负数，冬天零下5℃怎么表示？欠别人100块钱怎么记账？海平面以下的山脉怎么测量高度？\n\n负数的发明让数学从\"看得见\"（数东西）变成了\"想得到\"（抽象概念）——这是数学思维的一大步！\n\n而且——两江巴蜀中学的第一次月考，正负数分类必考10分以上！"},
         
         // 2. 核心概念
         {type:"knowledge",title:"🔑 核心概念（先理解再记忆）",body:`
@@ -6829,12 +6829,8 @@ App.renderSection = function(section, day, subject, sectionIdx) {
       if (g.COURSE_DATA[d].day === day) {
         var subjectData = g.COURSE_DATA[d].subjects[subject];
         if (subjectData) {
-          // 课文放在学习目标之后、知识点之前
-          var insertIdx = 0;
-          // 如果第一个是opening或objectives类型，在它之后插入
-          if (subjectData.sections[0] && (subjectData.sections[0].type === "opening" || subjectData.sections[0].type === "objectives")) {
-            insertIdx = 1;
-          }
+          // 课文放在页面最后（方便自学时查阅原文）
+          var insertIdx = subjectData.sections.length;
           subjectData.sections.splice(insertIdx, 0, {
             type: "textbook",
             data: g.TEXTBOOK_DATA[key]

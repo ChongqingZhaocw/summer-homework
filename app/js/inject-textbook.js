@@ -15,12 +15,8 @@
       if (g.COURSE_DATA[d].day === day) {
         var subjectData = g.COURSE_DATA[d].subjects[subject];
         if (subjectData) {
-          // 课文放在学习目标之后、知识点之前
-          var insertIdx = 0;
-          // 如果第一个是opening或objectives类型，在它之后插入
-          if (subjectData.sections[0] && (subjectData.sections[0].type === "opening" || subjectData.sections[0].type === "objectives")) {
-            insertIdx = 1;
-          }
+          // 课文放在页面最后（方便自学时查阅原文）
+          var insertIdx = subjectData.sections.length;
           subjectData.sections.splice(insertIdx, 0, {
             type: "textbook",
             data: g.TEXTBOOK_DATA[key]
