@@ -478,3 +478,148 @@
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.1); }
 }
+
+/* ===== 任务清单优化（更清晰、不花哨） ===== */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+}
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  margin-bottom: 6px;
+  background: #FAFAFA;
+  border-radius: 8px;
+  border: 1px solid #E8E8E8;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.task-item:hover {
+  background: #F0F4FF;
+  border-color: #B8D4FE;
+}
+.task-item.done {
+  background: #F0FFF4;
+  border-color: #B8E6C8;
+  opacity: 0.75;
+}
+.task-item.done .task-text {
+  text-decoration: line-through;
+  color: #718096;
+}
+.task-check {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid #CBD5E0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  color: transparent;
+}
+.task-item.done .task-check {
+  background: #38A169;
+  border-color: #38A169;
+  color: white;
+}
+.task-text {
+  flex: 1;
+}
+.tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 1px 8px;
+  border-radius: 10px;
+  margin-right: 6px;
+  font-weight: 600;
+  vertical-align: middle;
+}
+.tag-read { background: #EBF8FF; color: #2B6CB0; }
+.tag-write { background: #FFFAF0; color: #DD6B20; }
+.tag-recite { background: #FAF5FF; color: #6B46C1; }
+.tag-practice { background: #F0FFF4; color: #38A169; }
+.tag-video { background: #FFF5F5; color: #E53E3E; }
+.tag-audio { background: #E6FFFA; color: #319795; }
+
+/* ===== 知识卡片图文放大 ===== */
+.knowledge-card {
+  font-size: 1rem;
+  line-height: 1.9;
+}
+.knowledge-card p {
+  margin: 6px 0;
+}
+.knowledge-card .body {
+  padding: 4px 0;
+}
+/* 生字词专用放大 */
+.knowledge-card .vocab-word {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+.knowledge-card .vocab-phonetic {
+  font-size: 0.95rem;
+  color: #4A5568;
+}
+/* 数学公式放大 */
+.math-formula {
+  font-size: 1.15rem;
+  padding: 14px;
+  background: #EBF8FF;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 700;
+  color: #2B6CB0;
+  border: 1px solid #BEE3F8;
+  margin: 8px 0;
+}
+.math-formula .explain {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #4A5568;
+  margin-top: 6px;
+}
+/* 音标卡片放大 */
+.phonetic-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 8px;
+}
+.phonetic-item {
+  background: white;
+  border: 1px solid #E2E8F0;
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+}
+.phonetic-item .symbol {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #E53E3E;
+}
+.phonetic-item .example {
+  font-size: 0.95rem;
+  color: #4A5568;
+  margin-top: 4px;
+}
+/* 练习卡片 */
+.practice-box {
+  background: white;
+  border: 1px solid #E2E8F0;
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 10px;
+}
+.practice-box .question {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 6px;
+}

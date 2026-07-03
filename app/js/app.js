@@ -166,6 +166,26 @@ var App = {
     var html = "<div class='content-section'>";
     
     switch(section.type) {
+      case "objectives":
+        html += "<div class='objectives-card'><div class='obj-header'><span>🎯</span>" + (section.title || "今日学习目标") + "</div><div class='obj-body'>";
+        for (var oi = 0; oi < section.items.length; oi++) {
+          html += "<div class='obj-item'><div class='obj-icon'>" + (section.items[oi].icon || "📌") + "</div><div class='obj-text'><strong>" + section.items[oi].label + "</strong><br><span style='font-size:0.82rem;color:#4A5568;'>" + section.items[oi].desc + "</span></div></div>";
+        }
+        if (section.why) html += "<div class='obj-why'>💡 <strong>为什么学这个？</strong><br>" + section.why + "</div>";
+        html += "</div>";
+        break;
+      case "mindmap":
+        html += "<div class='mindmap-card'><div class='section-title'><span>🧠</span>" + (section.title || "知识结构") + "</div>";
+        html += "<div class='mindmap-node center'>" + section.center + "</div>";
+        for (var mi = 0; mi < section.branches.length; mi++) {
+          html += "<div class='mindmap-branch'><div class='branch-label'>" + section.branches[mi].label + "</div>";
+          for (var mj = 0; mj < section.branches[mi].items.length; mj++) {
+            html += "<div class='branch-item'>" + section.branches[mi].items[mj] + "</div>";
+          }
+          html += "</div>";
+        }
+        html += "</div>";
+        break;
       case "knowledge":
         html += "<div class='section-title'><span>📝</span>" + (section.title || "知识点") + "</div>";
         html += "<div class='knowledge-card'><div class='body'>" + section.body + "</div></div>";
@@ -235,13 +255,6 @@ var App = {
         html += "<ul class='task-list'>";
         var dayStatus = this.progress[day] || {};
         var doneTasks = dayStatus[subject] || [];
-        var taskIdx = 0;
-        for (var sc = 0; sc < sectionIdx; sc++) {
-          if (this.getDayData(day) && this.getDayData(day).subjects[subject].sections[sc].type === "task") {
-            taskIdx++;
-          }
-        }
-        // 重新计算
         var offset = 0;
         for (var sc2 = 0; sc2 < sectionIdx; sc2++) {
           var s = this.getDayData(day);

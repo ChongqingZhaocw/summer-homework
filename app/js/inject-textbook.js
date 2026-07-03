@@ -15,10 +15,10 @@
       if (g.COURSE_DATA[d].day === day) {
         var subjectData = g.COURSE_DATA[d].subjects[subject];
         if (subjectData) {
-          // 在最前面插入课文（在opening之后，但在其他内容之前）
+          // 课文放在学习目标之后、知识点之前
           var insertIdx = 0;
-          // 如果第一个是opening类型，则在它之后插入
-          if (subjectData.sections[0] && subjectData.sections[0].type === "opening") {
+          // 如果第一个是opening或objectives类型，在它之后插入
+          if (subjectData.sections[0] && (subjectData.sections[0].type === "opening" || subjectData.sections[0].type === "objectives")) {
             insertIdx = 1;
           }
           subjectData.sections.splice(insertIdx, 0, {
