@@ -17,7 +17,7 @@ $jsFiles = @(
   "tracker.js","tracker-ui.js","mastery.js","mastery-ui.js",
   "learn-engine.js","english-enhanced.js","integrate.js",
   "textbook.js","textbook-content.js","textbook-content-d2-7.js","inject-textbook.js",
-  "stories.js","inject-stories.js","report-system.js","review-system.js"
+  "stories.js","inject-stories.js","learning-methods.js","method-integration.js","report-system.js","review-system.js"
 )
 
 Write-Host "🚀 开始打包暑期作业..."
