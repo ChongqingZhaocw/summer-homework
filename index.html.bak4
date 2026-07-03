@@ -3612,953 +3612,552 @@ COURSE_DATA.push({
     ]}
   }
 })
-COURSE_DATA.push({
-  day:22,date:"7月23日",weekday:"周四",difficulty:"中等",focus:"《植树的牧羊人》·几何图形初步·Unit 8 Section A",
-  subjects:{
-    chinese:{title:"第12课《植树的牧羊人》·让·乔诺",
-    sections:[
-      {type:"objectives",title:"🎯 今天要学什么？",items:[
-        {icon:"🌲",label:"默读课文，理解牧羊人形象",desc:"找出牧羊人的品质"},
-        {icon:"✍️",label:"学习对比手法",desc:"荒原→绿洲的变化"}
-      ]},
-      {type:"knowledge",title:"👤 作者与背景",body:`
-        <p><strong>让·乔诺</strong>（1895-1970）：法国著名作家。</p>
-        <p>本文讲述了一个牧羊人几十年如一日在荒原上种树，最终把荒原变成绿洲的故事。</p>
-        <p>💡 <strong>为什么学这篇？</strong>它告诉我们：坚持做一件小事，也能创造奇迹！</p>
-      `},
-      {type:"vocabulary",title:"📝 重点字词",words:[
-        {word:"坍塌",pinyin:"tān tā",meaning:"倒塌"},
-        {word:"慷慨",pinyin:"kāng kǎi",meaning:"大方、不吝啬"},
-        {word:"干涸",pinyin:"gān hé",meaning:"（河道）干枯"},
-        {word:"废墟",pinyin:"fèi xū",meaning:"城市/村庄被毁后的遗迹"},
-        {word:"刨根问底",pinyin:"páo gēn wèn dǐ",meaning:"追究底细"}
-      ]},
-      {type:"knowledge",title:"📖 课文结构",body:`
-        <p>以<strong>时间顺序</strong>展开，1913年→1920年→1945年：</p>
-        <table style="width:100%;border-collapse:collapse;font-size:0.85rem;">
-          <tr style="background:#E8F0FE;"><th style="padding:4px;border:1px solid #ddd;">时间</th><th style="padding:4px;border:1px solid #ddd;">环境</th><th style="padding:4px;border:1px solid #ddd;">牧羊人的行动</th></tr>
-          <tr><td style="padding:4px;border:1px solid #ddd;">1913年</td><td style="padding:4px;border:1px solid #ddd;">荒原、废墟</td><td style="padding:4px;border:1px solid #ddd;">开始种树</td></tr>
-          <tr><td style="padding:4px;border:1px solid #ddd;">1920年</td><td style="padding:4px;border:1px solid #ddd;">出现绿意</td><td style="padding:4px;border:1px solid #ddd;">坚持种了7年</td></tr>
-          <tr><td style="padding:4px;border:1px solid #ddd;">1945年</td><td style="padding:4px;border:1px solid #ddd;">绿洲、生机</td><td style="padding:4px;border:1px solid #ddd;">荒地变森林</td></tr>
-        </table>
-        <p>牧羊人品质：<strong>毅力、无私、热爱自然、不求回报</strong></p>
-      `},
-      {type:"practice",title:"📝 练习",questions:[
-        {q:"1. 牧羊人种树坚持了多少年？",options:["A. 10多年","B. 30多年","C. 50多年","D. 一辈子"],answer:1},
-        {q:"2. 课文最突出的写作手法是？",options:["A. 比喻","B. 对比（环境变化）","C. 拟人","D. 排比"],answer:1},
-        {q:"3. 牧羊人的品质不包括？",options:["A. 坚持","B. 无私","C. 贪财","D. 热爱自然"],answer:2}
-      ]},
-      {type:"task",title:"📋 今日任务",tasks:[
-        {text:"默读课文1遍",tag:"read"},
-        {text:"抄写重点字词",tag:"write"},
-        {text:"画出环境变化的对比表",tag:"practice"},
-        {text:"思考：你坚持做最久的一件事是什么？",tag:"practice"}
-      ]}
-    ]},
-    math:{title:"第四章·几何图形初步—立体图形与平面图形",
-    sections:[
-      {type:"objectives",title:"🎯 今天要学什么？",items:[
-        {icon:"🔷",label:"区分立体图形和平面图形",desc:"柱体、锥体、球体"},
-        {icon:"📐",label:"学会从不同方向看立体图形",desc:"三视图初步"},
-        {icon:"✂️",label:"展开图",desc:"正方体的11种展开图"}
-      ]},
-      {type:"knowledge",title:"📐 几何图形分类",body:`
-        <div style="background:#F0FFF4;padding:12px;border-radius:8px;">
-          <p style="font-weight:bold;">① 平面图形：在同一个平面内</p>
-          <p style="margin-left:20px;">线段、角、三角形、长方形、圆...</p>
-          <p style="margin-top:8px;font-weight:bold;">② 立体图形：不在同一个平面内</p>
-          <p style="margin-left:20px;">• 柱体：圆柱、棱柱（三棱柱、四棱柱...）</p>
-          <p style="margin-left:20px;">• 锥体：圆锥、棱锥</p>
-          <p style="margin-left:20px;">• 球体</p>
-        </div>
-        <p>💡 <strong>三视图：</strong>从正面看（主视图）、从左面看（左视图）、从上面看（俯视图）</p>
-      `},
-      {type:"knowledge",title:"📝 正方体展开图（重点！）",body:`
-        <p>正方体有 <strong>11种</strong> 不同的展开图！</p>
-        <p>记忆口诀：<strong>"141型"有6种，"231型"有3种，"222型"有1种，"33型"有1种</strong></p>
-        <div style="background:#FFF7E6;padding:10px;border-radius:8px;">
-          <p>❌ <strong>不能围成正方体的：</strong></p>
-          <p>• 出现"田"字形 ❌</p>
-          <p>• 出现"凹"字形 ❌</p>
-          <p>• 出现"L"型过长 ❌</p>
-        </div>
-      `},
-      {type:"practice",title:"📝 练习",questions:[
-        {q:"1. 下列哪个是立体图形？",options:["A. 圆","B. 正方形","C. 球","D. 三角形"],answer:2},
-        {q:"2. 圆柱体从正面看是什么形状？",options:["A. 圆","B. 长方形","C. 三角形","D. 梯形"],answer:1},
-        {q:"3. 正方体的展开图有几种？",options:["A. 6","B. 8","C. 11","D. 12"],answer:2}
-      ]},
-      {type:"task",title:"📋 今日任务",tasks:[
-        {text:"观察身边的立体图形（至少10个）",tag:"read"},
-        {text:"画一个正方体展开图",tag:"practice"},
-        {text:"完成课本练习题",tag:"practice"}
-      ]}
-    ]},
-    english:{title:"Unit 8 When is your birthday? Section A",
-    sections:[
-      {type:"objectives",title:"🎯 今天要学什么？",items:[
-        {icon:"🎂",label:"掌握月份和序数词",desc:"January到December"},
-        {icon:"📅",label:"学会问生日",desc:"When is your birthday?"},
-        {icon:"🔊",label:"音标：/θ/ /ð/",desc:"咬舌音要诀"}
-      ]},
-      {type:"knowledge",title:"🔊 音标·/θ/和/ð/",body:`
-        <p>这两个是英语的<strong>特色音</strong>，中文里没有！</p>
-        <p style="color:#D94A4A;">关键：舌尖轻咬上下齿之间，送气发出</p>
-        <div style="background:#FFF7E6;padding:10px;border-radius:8px;">
-          <p><strong>/θ/</strong> 清辅音（声带不振动）</p>
-          <p style="font-size:1.1rem;">three /θriː/ · think /θɪŋk/ · birthday /ˈbɜːθdeɪ/</p>
-          <p style="margin-top:6px;"><strong>/ð/</strong> 浊辅音（声带振动）</p>
-          <p style="font-size:1.1rem;">this /ðɪs/ · that /ðæt/ · mother /ˈmʌðə/</p>
-        </div>
-        <p>💡 和中文拼音的"z/c/s"对比练习</p>
-      `},
-      {type:"vocabulary",title:"📝 月份和序数词",words:[
-        {word:"January",phonetic:"/ˈdʒænjuəri/",meaning:"一月"},
-        {word:"February",phonetic:"/ˈfebruəri/",meaning:"二月"},
-        {word:"March",phonetic:"/mɑːtʃ/",meaning:"三月"},
-        {word:"April",phonetic:"/ˈeɪprəl/",meaning:"四月"},
-        {word:"first",phonetic:"/fɜːst/",meaning:"第一"},
-        {word:"second",phonetic:"/ˈsekənd/",meaning:"第二"},
-        {word:"third",phonetic:"/θɜːd/",meaning:"第三"}
-      ]},
-      {type:"knowledge",title:"💡 问生日",body:`
-        <div style="background:#E8F0FE;padding:10px;border-radius:8px;">
-          <p>📌 <strong>When is your birthday?</strong></p>
-          <p>My birthday is on <strong>May 1st</strong>.</p>
-          <p>📌 <strong>When is his/her birthday?</strong></p>
-          <p>His birthday is on <strong>June 2nd</strong>.</p>
-          <p>💡 <strong>注意：</strong>日期前用 <strong>on</strong>！月份前用 <strong>in</strong>！</p>
-          <p>on May 1st ✓ · in May ✓</p>
-        </div>
-      `},
-      {type:"task",title:"📋 今日任务",tasks:[
-        {text:"跟读月份和序数词（每个3遍）",tag:"audio"},
-        {text:"抄写12个月份单词",tag:"write"},
-        {text:"用When问家人生日并记录",tag:"practice"},
-        {text:"练习/θ/和/ð/音各10遍",tag:"audio"}
-      ]}
-    ]}
-  }
-})
 
 
-COURSE_DATA.push({
-  day:23,date:"7月24日",weekday:"周五",difficulty:"中等",focus:"植树的牧羊人赏析·直线射线线段·Unit 8 Section B",
-  subjects:{
-    chinese:{title:"第12课《植树的牧羊人》赏析",
-    sections:[
-      {type:"objectives",title:"🎯 今天要学什么？",items:[
-        {icon:"✍️",label:"深入分析人物形象",desc:"牧羊人的精神品质"},
-        {icon:"💡",label:"学习象征手法",desc:"种树象征什么？"}
-      ]},
-      {type:"knowledge",title:"💡 人物形象分析",body:`
-        <div style="background:#F0FFF4;padding:10px;border-radius:8px;">
-          <p><strong>牧羊人的品质：</strong></p>
-          <p>🌲 <strong>坚持不懈：</strong>30多年每天种树，从不间断</p>
-          <p>🌲 <strong>无私奉献：</strong>不求回报，只是为了改善环境</p>
-          <p>🌲 <strong>热爱自然：</strong>每一棵树都精心照料</p>
-          <p>🌲 <strong>内心平静：</strong>独居荒原却从不抱怨</p>
-          <p>🌲 <strong>充满希望：</strong>相信荒原能变成绿洲</p>
-        </div>
-        <p style="margin-top:6px;">💡 <strong>种树的象征意义：</strong>种下的是树，更是<strong>希望</strong>和<strong>信念</strong>。每一棵树都代表着对未来的一份坚持。</p>
-      `},
-      {type:"practice",title:"📝 练习",questions:[
-        {q:"1. 牧羊人最突出的品质是？",options:["A. 聪明","B. 有钱","C. 坚持不懈","D. 强壮"],answer:2},
-        {q:"2. 文中'种树'象征什么？",options:["A. 赚钱","B. 希望和坚持","C. 打发时间","D. 锻炼身体"],answer:1},
-        {q:"3. 作者写这篇文章想告诉我们什么？",options:["A. 种树很难","B. 坚持做一件事可以改变世界","C. 牧羊人的生活很苦","D. 荒地种不了树"],answer:1}
-      ]},
-      {type:"task",title:"📋 今日任务",tasks:[
-        {text:"复习课文笔记",tag:"read"},
-        {text:"写一段100字的人物分析",tag:"write"},
-        {text:"思考：你身边有像牧羊人一样的人吗？",tag:"practice"}
-      ]}
-    ]},
-    math:{title:"第四章·4.2 直线、射线、线段",
-    sections:[
-      {type:"objectives",title:"🎯 今天要学什么？",items:[
-        {icon:"📏",label:"区分直线、射线、线段",desc:"有无端点、能否度量"},
-        {icon:"✏️",label:"掌握线段的中点",desc:"中点的性质"},
-        {icon:"📐",label:"会比较线段长短",desc:"叠合法和度量法"}
-      ]},
-      {type:"knowledge",title:"📐 三种线的区别",body:`
-        <table style="width:100%;border-collapse:collapse;font-size:0.85rem;">
-          <tr style="background:#E8F0FE;"><th style="padding:6px;border:1px solid #ddd;">名称</th><th style="padding:6px;border:1px solid #ddd;">端点</th><th style="padding:6px;border:1px solid #ddd;">能否度量</th><th style="padding:6px;border:1px solid #ddd;">画法</th></tr>
-          <tr><td style="padding:6px;border:1px solid #ddd;">直线</td><td style="padding:6px;border:1px solid #ddd;">0个</td><td style="padding:6px;border:1px solid #ddd;">不能（无限长）</td><td style="padding:6px;border:1px solid #ddd;">AB 或 直线AB</td></tr>
-          <tr><td style="padding:6px;border:1px solid #ddd;">射线</td><td style="padding:6px;border:1px solid #ddd;">1个</td><td style="padding:6px;border:1px solid #ddd;">不能（一端无限）</td><td style="padding:6px;border:1px solid #ddd;">射线AB（A为端点）</td></tr>
-          <tr><td style="padding:6px;border:1px solid #ddd;">线段</td><td style="padding:6px;border:1px solid #ddd;">2个</td><td style="padding:6px;border:1px solid #ddd;">能！</td><td style="padding:6px;border:1px solid #ddd;">线段AB</td></tr>
-        </table>
-        <p style="margin-top:6px;">💡 <strong>最简公理：</strong>两点之间，<strong>线段最短</strong>！</p>
-      `},
-      {type:"knowledge",title:"📝 中点与计算",body:`
-        <div style="background:#F0FFF4;padding:10px;border-radius:8px;">
-          <p><strong>中点：</strong>把线段分成两段相等的点</p>
-          <p>如果C是AB的中点，则：AC = CB = AB/2</p>
-          <p style="margin-top:6px;"><strong>例题：</strong>AB=10cm，C是AB的中点，D是AC的中点。求AD。</p>
-          <p>AC = 10/2 = 5cm</p>
-          <p>AD = 5/2 = 2.5cm ✅</p>
-        </div>
-      `},
-      {type:"practice",title:"📝 练习",questions:[
-        {q:"1. 有几个端点的线能度量长度？",options:["A. 0个","B. 1个","C. 2个","D. 3个"],answer:2},
-        {q:"2. 两点之间什么最短？",options:["A. 直线","B. 射线","C. 线段","D. 曲线"],answer:2},
-        {q:"3. AB=8cm，C是AB中点，AC=？",options:["A. 2cm","B. 4cm","C. 6cm","D. 8cm"],answer:1}
-      ]},
-      {type:"task",title:"📋 今日任务",tasks:[
-        {text:"画直线、射线、线段各2条",tag:"write"},
-        {text:"牢记'两点间线段最短'",tag:"recite"},
-        {text:"完成中点计算练习题",tag:"practice"}
-      ]}
-    ]},
-    english:{title:"Unit 8 When is your birthday? Section B",
-    sections:[
-      {type:"objectives",title:"🎯 今天要学什么？",items:[
-        {icon:"📅",label:"掌握日期表达法",desc:"月份+序数词"},
-        {icon:"🎈",label:"学会邀请和回复",desc:"Let's... / That sounds good."}
-      ]},
-      {type:"vocabulary",title:"📝 更多日期词汇",words:[
-        {word:"party",phonetic:"/ˈpɑːti/",meaning:"派对"},
-        {word:"festival",phonetic:"/ˈfestɪvl/",meaning:"节日"},
-        {word:"trip",phonetic:"/trɪp/",meaning:"旅行"},
-        {word:"test",phonetic:"/test/",meaning:"考试"},
-        {word:"school trip",phonetic:"/skuːl trɪp/",meaning:"学校旅行"}
-      ]},
-      {type:"knowledge",title:"💡 -ing 延伸规则",body:`
-        <p><strong>-ing 的规律：</strong>很多动词加-ing变成"做某事"的概念</p>
-        <div style="background:#FFF7E6;padding:10px;border-radius:8px;">
-          <p>📌 动词 + ing = 正在做 / 做某事</p>
-          <p>swim → swimming · run → running · play → playing</p>
-          <p><strong>记忆延伸：</strong>看到-ing就想到"正在"或"做某事"</p>
-          <p>多学一个词就能延伸出更多：</p>
-          <p><strong>swim</strong>（游泳）→ <strong>swimming</strong>（游泳运动）→ <strong>swimmer</strong>（游泳者）</p>
-          <p><strong>teach</strong>（教）→ <strong>teaching</strong>（教学）→ <strong>teacher</strong>（老师）</p>
-        </div>
-        <p>💡 <strong>这就是英语的构词法！</strong>学会一个词根就能延伸出多个单词</p>
-      `},
-      {type:"task",title:"📋 今日任务",tasks:[
-        {text:"跟读序数词（1-31）",tag:"audio"},
-        {text:"写出家人的生日日期",tag:"write"},
-        {text:"用Let's造邀请句子",tag:"practice"},
-        {text:"找出5个-ing延伸的单词",tag:"practice"}
-      ]}
-    ]}
-  }
-})
-COURSE_DATA.push({
-  day:24,date:"7月25日",weekday:"周六",difficulty:"中等",focus:"《走一步，再走一步》·角·Unit 9 Section A",
-  subjects:{
-    chinese:{title:"第13课《走一步，再走一步》·莫顿·亨特",
-    sections:[
-      {type:"objectives",title:"🎯 今天要学什么？",items:[
-        {icon:"👣",label:"理解'化整为零'的智慧",desc:"大困难分解成小步骤"},
-        {icon:"💡",label:"学习心理描写",desc:"恐惧→信心转变"}
-      ]},
-      {type:"knowledge",title:"👤 作者与背景",body:`
-        <p><strong>莫顿·亨特</strong>（1920-2016）：美国作家、心理学家。</p>
-        <p>本文是一个真实的故事。亨特小时候是个体弱多病的孩子，一次意外被困悬崖上，在父亲"走一步，再走一步"的引导下成功脱险。</p>
-        <p>这次经历让他明白了一个影响一生的道理：<strong>任何困难都可以分解成小步骤去解决</strong>。</p>
-        <p>💡 <strong>核心思想：</strong>"走一步，再走一步"——遇到困难不要怕，一步一步来！</p>
-      `},
-      {type:"vocabulary",title:"📝 重点字词",words:[
-        {word:"灼热",pinyin:"zhuó rè",meaning:"像火烧一样热"},
-        {word:"酷热",pinyin:"kù rè",meaning:"非常热"},
-        {word:"厌倦",pinyin:"yàn juàn",meaning:"厌烦、疲倦"},
-        {word:"附和",pinyin:"fù hè",meaning:"跟随别人说"},
-        {word:"恍惚",pinyin:"huǎng hū",meaning:"神志不清"},
-        {word:"小心翼翼",pinyin:"xiǎo xīn yì yì",meaning:"非常小心"}
-      ]},
-      {type:"knowledge",title:"📖 心理描写分析",body:`
-        <div style="background:#F0FFF4;padding:10px;border-radius:8px;">
-          <p><strong>心理变化线：</strong></p>
-          <p>好奇（跟去玩）→ 恐惧（被困悬崖）→ 绝望（想哭）→ 信心（听父亲引导）→ 成功（安全着陆）→ 自豪（获得经验）</p>
-        </div>
-        <p>文中用了大量心理描写来展现主人公的恐惧。比如"我往下看，吓得几乎要晕倒"——这就是<strong>直接心理描写</strong>。</p>
-        <p>💡 写作技巧：用心理变化推动情节发展！</p>
-      `},
-      {type:"practice",title:"📝 练习",questions:[
-        {q:"1. 父亲为什么不让'我'跳下来？",options:["A. 太高了","B. 让'我'学会自己走","C. 他抱不动","D. 吓唬'我'"],answer:1},
-        {q:"2. '走一步，再走一步'的含义是？",options:["A. 走路要一步一步","B. 把大困难分解成小步骤","C. 不要着急","D. 要慢慢走"],answer:1},
-        {q:"3. 文中'我'的心理变化是？",options:["A. 恐惧→平静","B. 好奇→恐惧→信心","C. 开心→难过","D. 愤怒→释然"],answer:1}
-      ]},
-      {type:"task",title:"📋 今日任务",tasks:[
-        {text:"朗读课文1遍",tag:"read"},
-        {text:"画出'我'的心理变化曲线图",tag:"write"},
-        {text:"写一段自己克服困难的经历",tag:"practice"}
-      ]}
-    ]},
-    math:{title:"第四章·4.3 角",
-    sections:[
-      {type:"objectives",title:"🎯 今天要学什么？",items:[
-        {icon:"📐",label:"理解角的定义",desc:"有公共端点的两条射线"},
-        {icon:"🔄",label:"学会角的度量",desc:"度分秒的换算"},
-        {icon:"✏️",label:"会比较角的大小",desc:"用量角器"}
-      ]},
-      {type:"knowledge",title:"📐 角的定义和度量",body:`
-        <p><strong>角：</strong>有公共端点的两条射线组成的图形。</p>
-        <div style="background:#FFF7E6;padding:10px;border-radius:8px;">
-          <p><strong>角的度量单位：</strong></p>
-          <p>1° = 60'（1度 = 60分）</p>
-          <p>1' = 60"（1分 = 60秒）</p>
-          <p style="margin-top:6px;font-size:1.05rem;">💡 和时间的"时分秒"完全一样！</p>
-          <p>1小时 = 60分 · 1分 = 60秒</p>
-          <p>1度 = 60分 · 1分 = 60秒</p>
-        </div>
-        <p><strong>角的分类：</strong></p>
-        <p>• 锐角：0° < 角 < 90°</p>
-        <p>• 直角：90°</p>
-        <p>• 钝角：90° < 角 < 180°</p>
-        <p>• 平角：180° · 周角：360°</p>
-      `},
-      {type:"knowledge",title:"📝 度分秒换算",body:`
-        <div style="background:#E8F0FE;padding:10px;border-radius:8px;">
-          <p><strong>例题1：</strong>30°15' = ?度</p>
-          <p>15' = 15÷60 = 0.25°</p>
-          <p>30°15' = 30.25° ✅</p>
-          <p style="margin-top:6px;"><strong>例题2：</strong>35.5° = ?度?分</p>
-          <p>0.5° = 0.5×60 = 30'</p>
-          <p>35.5° = 35°30' ✅</p>
-        </div>
-      `},
-      {type:"practice",title:"📝 练习",questions:[
-        {q:"1. 直角等于多少度？",options:["A. 45°","B. 60°","C. 90°","D. 180°"],answer:2},
-        {q:"2. 30°30' = ?度",options:["A. 30.3°","B. 30.5°","C. 30.03°","D. 30.05°"],answer:1},
-        {q:"3. 45.5° = ?度?分",options:["A. 45°5'","B. 45°30'","C. 45°50'","D. 45°55'"],answer:1},
-        {q:"4. 以下哪个是钝角？",options:["A. 30°","B. 90°","C. 120°","D. 180°"],answer:2}
-      ]},
-      {type:"task",title:"📋 今日任务",tasks:[
-        {text:"记住角的分类（锐、直、钝、平、周）",tag:"recite"},
-        {text:"练习度分秒换算（至少5道）",tag:"practice"},
-        {text:"用量角器量身边的角",tag:"practice"}
-      ]}
-    ]},
-    english:{title:"Unit 9 My favorite subject is science. Section A",
-    sections:[
-      {type:"objectives",title:"🎯 今天要学什么？",items:[
-        {icon:"📚",label:"掌握学科类词汇",desc:"math, science, history, music"},
-        {icon:"💬",label:"学会表达喜好和原因",desc:"because, interesting, fun"}
-      ]},
-      {type:"vocabulary",title:"📝 学科词汇",words:[
-        {word:"subject",phonetic:"/ˈsʌbdʒɪkt/",meaning:"科目、学科"},
-        {word:"science",phonetic:"/ˈsaɪəns/",meaning:"科学"},
-        {word:"history",phonetic:"/ˈhɪstri/",meaning:"历史"},
-        {word:"biology",phonetic:"/baɪˈɒlədʒi/",meaning:"生物"},
-        {word:"geography",phonetic:"/dʒiˈɒɡrəfi/",meaning:"地理"}
-      ]},
-      {type:"knowledge",title:"💡 为什么学这门课？",body:`
-        <div style="background:#E8F0FE;padding:10px;border-radius:8px;">
-          <p><strong>关键词：why - because</strong></p>
-          <p>A: What's your favorite subject?</p>
-          <p>B: My favorite subject is <strong>science</strong>.</p>
-          <p>A: <strong>Why</strong> do you like science?</p>
-          <p>B: <strong>Because</strong> it's interesting.</p>
-        </div>
-        <p>💡 <strong>单词延伸技巧：</strong></p>
-        <p><strong>interesting</strong>（有趣的）→ <strong>interested</strong>（感兴趣的）→ <strong>interest</strong>（兴趣）</p>
-        <p>看到<strong>-ing</strong>结尾表示"令人..."，看到<strong>-ed</strong>结尾表示"感到..."</p>
-        <p>This book is <strong>interesting</strong>.（这本书有趣）</p>
-        <p>I am <strong>interested</strong> in this book.（我对这本书感兴趣）</p>
-      `},
-      {type:"practice",title:"📝 练习",questions:[
-        {q:"1. -ing结尾的形容词表示？",options:["A. 感到...","B. 令人...","C. 被...","D. 已经..."],answer:1},
-        {q:"2. — Why do you like music? — ___ it's fun.",options:["A. So","B. And","C. Because","D. But"],answer:2}
-      ]},
-      {type:"task",title:"📋 今日任务",tasks:[
-        {text:"抄写学科词汇（每个2遍）",tag:"write"},
-        {text:"用Why-because编对话",tag:"practice"},
-        {text:"学习-ing和-ed的区分",tag:"read"},
-        {text:"复习Day 22-23单词",tag:"recite"}
-      ]}
-    ]}
-  }
-})COURSE_DATA.push({
-  day:25,date:"7月26日",weekday:"周日",difficulty:"中等",focus:"第四单元复习·角的比较·Unit 9 Section B",
-  subjects:{
-    chinese:{title:"第四单元综合复习",
-    sections:[
-      {type:"objectives",title:"🎯 今天要学什么？",items:[
-        {icon:"📖",label:"复习《纪念白求恩》《植树的牧羊人》《走一步》",desc:"三篇文章的对比阅读"},
-        {icon:"✍️",label:"理解不同文体特点",desc:"议论文、小说、记叙文"}
-      ]},
-      {type:"knowledge",title:"📖 单元总结",body:`
-        <div style="background:#F0FFF4;padding:10px;border-radius:8px;">
-          <p><strong>本单元三篇文章的共同点：</strong>都告诉我们人生的道理</p>
-          <p>📌 《纪念白求恩》— 无私奉献的精神</p>
-          <p>📌 《植树的牧羊人》— 坚持的力量</p>
-          <p>📌 《走一步，再走一步》— 化解困难的智慧</p>
-        </div>
-        <div style="background:#FFF7E6;padding:10px;border-radius:8px;margin-top:6px;">
-          <p><strong>文体对比：</strong></p>
-          <p>• 《纪念白求恩》— 议论文（论点+论据+论证）</p>
-          <p>• 《植树的牧羊人》— 小说（人物+环境+情节）</p>
-          <p>• 《走一步，再走一步》— 记叙文（六要素）</p>
-        </div>
-      `},
-      {type:"practice",title:"📝 练习",questions:[
-        {q:"1. 下列哪篇是议论文？",options:["A. 植树的牧羊人","B. 纪念白求恩","C. 走一步","D. 春"],answer:1},
-        {q:"2. 《植树的牧羊人》的主人公品质是？",options:["A. 聪明","B. 坚持","C. 帅气","D. 有钱"],answer:1},
-        {q:"3. '走一步，再走一步'的意思是？",options:["A. 走路方法","B. 分解困难","C. 慢慢走","D. 不要急躁"],answer:1}
-      ]},
-      {type:"task",title:"📋 今日任务",tasks:[
-        {text:"复习第四单元三篇课文笔记",tag:"read"},
-        {text:"写一段文字对比三篇文章",tag:"write"},
-        {text:"完成单元练习题",tag:"practice"}
-      ]}
-    ]},
-    math:{title:"第四章·4.3 角的比较与运算",
-    sections:[
-      {type:"objectives",title:"🎯 今天要学什么？",items:[
-        {icon:"📐",label:"会比较角的大小",desc:"度量法和叠合法"},
-        {icon:"➕",label:"学会角的和差计算",desc:"加减度分秒"},
-        {icon:"🧭",label:"理解余角和补角",desc:"互余和互补"}
-      ]},
-      {type:"knowledge",title:"📐 余角和补角",body:`
-        <div style="background:#F0FFF4;padding:10px;border-radius:8px;">
-          <p><strong>余角：</strong>两个角的和 = 90°，则它们互为余角</p>
-          <p style="margin-left:20px;">如：30°和60°互为余角</p>
-          <p style="margin-top:6px;"><strong>补角：</strong>两个角的和 = 180°，则它们互为补角</p>
-          <p style="margin-left:20px;">如：30°和150°互为补角</p>
-        </div>
-        <p style="margin-top:6px;">💡 <strong>求法：</strong></p>
-        <p>∠A的余角 = 90° - ∠A</p>
-        <p>∠A的补角 = 180° - ∠A</p>
-        <p style="margin-top:6px;color:#D94A4A;">重点：同角的余角相等，同角的补角相等！</p>
-      `},
-      {type:"knowledge",title:"📝 角的加减",body:`
-        <div style="background:#E8F0FE;padding:10px;border-radius:8px;">
-          <p><strong>例题：</strong>30°25' + 45°40' = ?</p>
-          <p>30° + 45° = 75°</p>
-          <p>25' + 40' = 65' = 1°5'</p>
-          <p>合计：75° + 1°5' = <strong>76°5'</strong> ✅</p>
-        </div>
-      `},
-      {type:"practice",title:"📝 练习",questions:[
-        {q:"1. 30°的余角是多少？",options:["A. 30°","B. 60°","C. 90°","D. 150°"],answer:1},
-        {q:"2. 45°的补角是多少？",options:["A. 45°","B. 90°","C. 135°","D. 180°"],answer:2},
-        {q:"3. 两个角互余，它们的和是？",options:["A. 90°","B. 180°","C. 270°","D. 360°"],answer:0},
-        {q:"4. 20°15' + 30°50' = ?",options:["A. 50°5'","B. 51°5'","C. 50°65'","D. 51°15'"],answer:1}
-      ]},
-      {type:"task",title:"📋 今日任务",tasks:[
-        {text:"记住余角补角定义",tag:"recite"},
-        {text:"做角度的加法和减法各3道",tag:"practice"},
-        {text:"画思维导图总结第四章",tag:"practice"}
-      ]}
-    ]},
-    english:{title:"Unit 9 My favorite subject is science. Section B",
-    sections:[
-      {type:"objectives",title:"🎯 今天要学什么？",items:[
-        {icon:"📝",label:"学会描述一天安排",desc:"时间+课程+感受"},
-        {icon:"✍️",label:"巩固because从句",desc:"I like... because..."}
-      ]},
-      {type:"vocabulary",title:"📝 形容词总结",words:[
-        {word:"boring",phonetic:"/ˈbɔːrɪŋ/",meaning:"无聊的"},
-        {word:"difficult",phonetic:"/ˈdɪfɪkəlt/",meaning:"困难的"},
-        {word:"relaxing",phonetic:"/rɪˈlæksɪŋ/",meaning:"令人放松的"},
-        {word:"useful",phonetic:"/ˈjuːsfəl/",meaning:"有用的"},
-        {word:"exciting",phonetic:"/ɪkˈsaɪtɪŋ/",meaning:"令人兴奋的"}
-      ]},
-      {type:"knowledge",title:"💡 构词法·-ful和-less",body:`
-        <p><strong>英语词汇延伸技巧：</strong>学会词根+后缀，一个变多个！</p>
-        <div style="background:#FFF7E6;padding:10px;border-radius:8px;">
-          <p>📌 <strong>-ful</strong> = "充满..." → use（使用）+ ful = useful（有用的）</p>
-          <p>📌 <strong>-less</strong> = "没有..." → use（使用）+ less = useless（没用的）</p>
-          <p style="margin-top:6px;">更多例子：</p>
-          <p>care + ful = careful（小心的）</p>
-          <p>care + less = careless（粗心的）</p>
-          <p>hope + ful = hopeful（有希望的）</p>
-          <p>hope + less = hopeless（没希望的）</p>
-        </div>
-        <p>💡 <strong>记一个词根就能记住2-3个词！</strong></p>
-      `},
-      {type:"task",title:"📋 今日任务",tasks:[
-        {text:"抄写本课形容词",tag:"write"},
-        {text:"用because造句（5个）",tag:"practice"},
-        {text:"用-ful和-less各造2个新词",tag:"practice"},
-        {text:"主动回忆法：复习Unit 7-9词汇",tag:"recite"}
-       ]}
-    ]}
-  }
-})COURSE_DATA.push({
-  day:26,date:"7月27日",weekday:"周一",difficulty:"中等",focus:"《猫》·余角补角·U1-6总复习",
-  subjects:{
-    chinese:{title:"第15课《猫》·郑振铎",
-    sections:[
-      {type:"objectives",title:"🎯 今天要学什么？",items:[
-        {icon:"🐱",label:"理解三只猫的不同命运",desc:"每只猫的特点和结局"},
-        {icon:"💡",label:"体会'我'的自省精神",desc:"为什么冤枉第三只猫后最难过"}
-      ]},
-      {type:"knowledge",title:"👤 作者与背景",body:`
-        <p><strong>郑振铎</strong>（1898-1958）：中国现代作家、学者。</p>
-        <p>本文通过写三次养猫的经历，表达了作者对生命的尊重和对自己的反省。</p>
-        <p>💡 <strong>核心思想：</strong>不要凭主观臆断下结论，要尊重每一个生命。</p>
-      `},
-      {type:"vocabulary",title:"📝 重点字词",words:[
-        {word:"蜷伏",pinyin:"quán fú",meaning:"弯曲身体躺着"},
-        {word:"叮嘱",pinyin:"dīng zhǔ",meaning:"反复嘱咐"},
-        {word:"惩戒",pinyin:"chéng jiè",meaning:"惩罚以示警戒"},
-        {word:"畏罪潜逃",pinyin:"wèi zuì qián táo",meaning:"犯了罪怕受惩罚而逃跑"}
-      ]},
-      {type:"knowledge",title:"📖 三只猫对比",body:`
-        <table style="width:100%;border-collapse:collapse;font-size:0.85rem;">
-          <tr style="background:#E8F0FE;"><th style="padding:4px;border:1px solid #ddd;"></th><th style="padding:4px;border:1px solid #ddd;">第一只</th><th style="padding:4px;border:1px solid #ddd;">第二只</th><th style="padding:4px;border:1px solid #ddd;">第三只</th></tr>
-          <tr><td style="padding:4px;border:1px solid #ddd;">来源</td><td style="padding:4px;border:1px solid #ddd;">隔壁要的</td><td style="padding:4px;border:1px solid #ddd;">舅舅家给的</td><td style="padding:4px;border:1px solid #ddd;">捡来的</td></tr>
-          <tr><td style="padding:4px;border:1px solid #ddd;">外貌</td><td style="padding:4px;border:1px solid #ddd;">黄色可爱</td><td style="padding:4px;border:1px solid #ddd;">黄色有趣</td><td style="padding:4px;border:1px solid #ddd;">难看忧郁</td></tr>
-          <tr><td style="padding:4px;border:1px solid #ddd;">结局</td><td style="padding:4px;border:1px solid #ddd;">病死</td><td style="padding:4px;border:1px solid #ddd;">被过路人捉走</td><td style="padding:4px;border:1px solid #ddd;">被'我'打后死在邻居家</td></tr>
-          <tr><td style="padding:4px;border:1px solid #ddd;">'我'的心情</td><td style="padding:4px;border:1px solid #ddd;">难过</td><td style="padding:4px;border:1px solid #ddd;">怅然</td><td style="padding:4px;border:1px solid #ddd;">难过+愧疚+自责</td></tr>
-        </table>
-        <p style="margin-top:6px;">💡 <strong>重点：</strong>作者对第三只猫的愧疚最深，因为它是被冤枉的！</p>
-      `},
-      {type:"practice",title:"📝 练习",questions:[
-        {q:"1. 作者对哪只猫的愧疚最深？",options:["A. 第一只","B. 第二只","C. 第三只","D. 一样"],answer:2},
-        {q:"2. 第三只猫被冤枉的根本原因是什么？",options:["A. 它确实吃了鸟","B. 因为它不讨人喜欢就凭主观判断","C. 作者不喜欢猫","D. 猫自己承认了"],answer:1},
-        {q:"3. 本文的主旨是？",options:["A. 猫很可爱","B. 要养猫","C. 不要主观臆断，尊重生命","D. 猫会吃鸟"],answer:2}
-      ]},
-      {type:"task",title:"📋 今日任务",tasks:[
-        {text:"默读课文1遍",tag:"read"},
-        {text:"画出三只猫的对比表",tag:"write"},
-        {text:"写一段200字的读后感",tag:"practice"}
-      ]}
-    ]},
-    math:{title:"第四章·余角补角综合+几何复习",
-    sections:[
-      {type:"objectives",title:"🎯 今天要学什么？",items:[
-        {icon:"📐",label:"巩固余角和补角",desc:"求一个角的余角和补角"},
-        {icon:"🧠",label:"用思维导图总结第四章",desc:"几何图形→直线射线线段→角"}
-      ]},
-      {type:"knowledge",title:"📐 余角补角专题",body:`
-        <div style="background:#FFF7E6;padding:10px;border-radius:8px;">
-          <p><strong>核心公式：</strong></p>
-          <p>∠A的余角 = 90° - ∠A</p>
-          <p>∠A的补角 = 180° - ∠A</p>
-          <p style="margin-top:6px;"><strong>重要性质：</strong></p>
-          <p>① 同角（等角）的余角相等</p>
-          <p>② 同角（等角）的补角相等</p>
-        </div>
-        <div style="background:#E8F0FE;padding:10px;border-radius:8px;margin-top:6px;">
-          <p><strong>例题：</strong>一个角的补角是这个角的3倍，求这个角。</p>
-          <p>设这个角为x</p>
-          <p>补角 = 180° - x</p>
-          <p>列方程：180 - x = 3x</p>
-          <p>180 = 4x</p>
-          <p>x = 45° ✅</p>
-        </div>
-      `},
-      {type:"practice",title:"📝 练习",questions:[
-        {q:"1. 一个角是50°，它的补角是？",options:["A. 40°","B. 130°","C. 50°","D. 180°"],answer:1},
-        {q:"2. 一个角的补角是120°，这个角是？",options:["A. 30°","B. 60°","C. 90°","D. 120°"],answer:1},
-        {q:"3. 两个角互补且相等，每个角是？",options:["A. 45°","B. 60°","C. 90°","D. 180°"],answer:2}
-      ]},
-      {type:"task",title:"📋 今日任务",tasks:[
-        {text:"背熟余角补角公式",tag:"recite"},
-        {text:"完成几何综合练习题",tag:"practice"},
-        {text:"画第四章思维导图",tag:"practice"}
-      ]}
-    ]},
-    english:{title:"Unit 1-6 综合复习",
-    sections:[
-      {type:"objectives",title:"🎯 今天要学什么？",items:[
-        {icon:"🔄",label:"复习Unit 1-6核心词汇",desc:"重点单词回顾"},
-        {icon:"📝",label:"巩固一般现在时",desc:"Do/Does 句型"}
-      ]},
-      {type:"knowledge",title:"📚 U1-6 核心语法对比",body:`
-        <div style="background:#E8F0FE;padding:10px;border-radius:8px;">
-          <p><strong>Unit 1-3：</strong>be动词（am/is/are）</p>
-          <p>I am... / You are... / He/She/It is...</p>
-          <p style="margin-top:6px;"><strong>Unit 4：</strong>There be + 方位介词</p>
-          <p>There is/are + 某物 + 某地</p>
-          <p style="margin-top:6px;"><strong>Unit 5-6：</strong>Do/Does 实义动词</p>
-          <p>Do you like...? / Does he like...?</p>
-        </div>
-        <p>💡 <strong>规律：</strong>be动词和实义动词不能同时在一个句子里作谓语！</p>
-        <p>❌ I am like bananas.</p>
-        <p>✅ I like bananas. 或 I am a student.</p>
-      `},
-      {type:"task",title:"📋 今日任务",tasks:[
-        {text:"复习U1-6所有单词表",tag:"read"},
-        {text:"做一般现在时练习题",tag:"practice"},
-        {text:"主动回忆法：遮住中文说英文单词",tag:"recite"},
-        {text:"",tag:"recite"}
-      ]}
-    ]}
-  }
-})COURSE_DATA.push({
-  day:27,date:"7月28日",weekday:"周二",difficulty:"中等",focus:"《动物笑谈》·第三章综合复习·U7-9复习",
-  subjects:{
-    chinese:{title:"第16课《动物笑谈》·康拉德·劳伦兹",
-    sections:[
-      {type:"objectives",title:"🎯 今天要学什么？",items:[
-        {icon:"🦆",label:"感受科学家的幽默和严谨",desc:"劳伦兹对动物的热爱"},
-        {icon:"✍️",label:"学习材料组织方式",desc:"用几件事写一个人"}
-      ]},
-      {type:"knowledge",title:"👤 作者与内容",body:`
-        <p><strong>康拉德·劳伦兹</strong>（1903-1989）：奥地利动物学家，诺贝尔奖得主。</p>
-        <p>本文选自他的著作《所罗门王的指环》。文中描写了他与动物之间的趣事，体现了他对动物的热爱和科学研究的严谨态度。</p>
-        <p>💡 <strong>"笑谈"的含义：</strong>既指故事的趣味性，也体现科学家在研究中获得的快乐。</p>
-      `},
-      {type:"vocabulary",title:"📝 重点字词",words:[
-        {word:"嗔怪",pinyin:"chēn guài",meaning:"假装生气"},
-        {word:"匍匐",pinyin:"pú fú",meaning:"爬行"},
-        {word:"怪诞不经",pinyin:"guài dàn bù jīng",meaning:"古怪荒唐"}
-      ]},
-      {type:"practice",title:"📝 练习",questions:[
-        {q:"1. 本文的文体是？",options:["A. 小说","B. 说明文","C. 科普文章","D. 议论文"],answer:2},
-        {q:"2. 文中'笑谈'指的是？",options:["A. 讽刺笑话","B. 有趣的科学研究故事","C. 冷笑话","D. 搞笑视频"],answer:1},
-        {q:"3. 劳伦兹对动物的态度是？",options:["A. 冷淡","B. 热爱和研究","C. 害怕","D. 厌恶"],answer:1}
-      ]},
-      {type:"task",title:"📋 今日任务",tasks:[
-        {text:"朗读课文1遍",tag:"read"},
-        {text:"抄写重点字词",tag:"write"},
-        {text:"整理本单元字词",tag:"practice"}
-      ]}
-    ]},
-    math:{title:"第三章·一元一次方程综合复习",
-    sections:[
-      {type:"objectives",title:"🎯 今天要学什么？",items:[
-        {icon:"📝",label:"回顾第三章全章知识点",desc:"方程→解法→应用"},
-        {icon:"🧠",label:"用思维导图总结",desc:"建立知识体系"}
-      ]},
-      {type:"knowledge",title:"📐 第三章知识导图",body:`
-        <div style="background:#F0FFF4;padding:12px;border-radius:8px;">
-          <p style="font-weight:bold;text-align:center;">🧠 一元一次方程</p>
-          <p>├─ 方程的定义：含有未知数的等式</p>
-          <p>├─ 解方程的步骤</p>
-          <p>│  ├ ① 去分母（两边×LCM）</p>
-          <p>│  ├ ② 去括号（注意符号）</p>
-          <p>│  ├ ③ 移项（过河要变号）</p>
-          <p>│  ├ ④ 合并同类项</p>
-          <p>│  └ ⑤ 系数化1</p>
-          <p>└─ 应用题</p>
-          <p>   ├ 和差倍分问题</p>
-          <p>   ├ 行程问题（相遇/追及）</p>
-          <p>   └ 工程/利润问题</p>
-        </div>
-      `},
-      {type:"practice",title:"📝 综合练习",questions:[
-        {q:"1. 解方程：3(x-2)=2x+5",options:["A. 9","B. 10","C. 11","D. 12"],answer:2},
-        {q:"2. 解方程：(x+1)/2 = 3",options:["A. 3","B. 4","C. 5","D. 6"],answer:2},
-        {q:"3. 移项时'+5'移到另一边变成？",options:["A. +5","B. -5","C. ×5","D. ÷5"],answer:1}
-      ]},
-      {type:"task",title:"📋 今日任务",tasks:[
-        {text:"画第三章思维导图",tag:"write"},
-        {text:"完成10道综合练习题",tag:"practice"},
-        {text:"错题整理到错题本",tag:"practice"}
-      ]}
-    ]},
-    english:{title:"Unit 7-9 综合复习",
-    sections:[
-      {type:"objectives",title:"🎯 今天要学什么？",items:[
-        {icon:"🔄",label:"复习Unit 7-9核心内容",desc:"价格、日期、喜好"},
-        {icon:"📝",label:"单元综合练习",desc:"语法+词汇+句型"}
-      ]},
-      {type:"knowledge",title:"📚 U7-9 综合",body:`
-        <div style="background:#E8F0FE;padding:10px;border-radius:8px;">
-          <p><strong>Unit 7：</strong>How much...? 问价格 + 服饰词汇</p>
-          <p><strong>Unit 8：</strong>When is...? 问日期 + 月份序数词</p>
-          <p><strong>Unit 9：</strong>What's your favorite...? 问喜好 + 学科词汇</p>
-        </div>
-        <p>💡 <strong>音标总结（U1-9出现的）：</strong></p>
-        <p>/i:/ /ɪ/ /e/ /æ/ /ʌ/ /ɑː/ /ɔ/ /uː/ /ʊ/ /ə/ /ɜː/</p>
-        <p>/eɪ/ /aɪ/ /ɔɪ/ /əʊ/ /aʊ/ /ɪə/ /eə/ /ʊə/</p>
-        <p>/p/ /b/ /t/ /d/ /k/ /ɡ/ /f/ /v/ /θ/ /ð/ /s/ /z/ /ʃ/ /ʒ/</p>
-        <p>/tʃ/ /dʒ/ /tr/ /dr/ /ts/ /dz/ /m/ /n/ /ŋ/ /h/ /l/ /r/ /w/ /j/</p>
-      `},
-      {type:"task",title:"📋 今日任务",tasks:[
-        {text:"复习U7-9单词和句型",tag:"read"},
-        {text:"做单元综合测试卷",tag:"practice"},
-        {text:"整理音标表（读+写）",tag:"recite"}
-      ]}
-    ]}
-  }
-})COURSE_DATA.push({
-  day:28,date:"7月29日",weekday:"周三",difficulty:"中等",focus:"《皇帝的新装》·第四章几何复习·英语期中复习",
-  subjects:{
-    chinese:{title:"第19课《皇帝的新装》·安徒生",
-    sections:[
-      {type:"objectives",title:"🎯 今天要学什么？",items:[
-        {icon:"👑",label:"理解童话的讽刺意义",desc:"为什么没人敢说真话"},
-        {icon:"💡",label:"学习夸张和反讽手法",desc:"作者如何通过故事讽刺社会"}
-      ]},
-      {type:"knowledge",title:"👤 作者与背景",body:`
-        <p><strong>汉斯·克里斯蒂安·安徒生</strong>（1805-1875）：丹麦著名童话作家。</p>
-        <p>安徒生一生写了168篇童话，被翻译成150多种语言。他的童话不仅仅是给孩子看的，更是给大人看的——因为里面藏着<strong>深刻的社会讽刺</strong>。</p>
-        <p>💡 <strong>本文背景：</strong>安徒生生活在19世纪初的丹麦，当时社会等级森严，贵族阶层腐败虚荣。皇帝的新装讽刺的就是这种虚伪的社会风气。</p>
-      `},
-      {type:"knowledge",title:"📖 人物分析",body:`
-        <div style="background:#F0FFF4;padding:10px;border-radius:8px;">
-          <p><strong>主要人物及象征：</strong></p>
-          <p>👑 <strong>皇帝</strong> — 象征虚伪、爱慕虚荣的统治者</p>
-          <p>🕴️ <strong>大臣</strong> — 象征阿谀奉承、不敢说实话的人</p>
-          <p>🧵 <strong>骗子</strong> — 象征利用人性弱点的人</p>
-          <p>👦 <strong>小孩</strong> — 象征纯真、敢于说真话的人</p>
-        </div>
-        <p style="margin-top:6px;">💡 <strong>为什么是小孩说真话？</strong>因为小孩天真无邪，没有成人的顾虑和虚荣心。</p>
-      `},
-      {type:"vocabulary",title:"📝 重点字词",words:[
-        {word:"炫耀",pinyin:"xuàn yào",meaning:"夸耀、显示"},
-        {word:"称职",pinyin:"chèn zhí",meaning:"能胜任本职工作"},
-        {word:"愚蠢",pinyin:"yú chǔn",meaning:"愚笨、不聪明"},
-        {word:"不可救药",pinyin:"bù kě jiù yào",meaning:"病重到无法医治，比喻坏到无法挽救"}
-      ]},
-      {type:"practice",title:"📝 练习",questions:[
-        {q:"1. 安徒生是哪国人？",options:["A. 德国","B. 丹麦","C. 瑞典","D. 法国"],answer:1},
-        {q:"2. 为什么大家都说皇帝穿了新衣服？",options:["A. 皇帝真的穿了","B. 怕被说不称职或愚蠢","C. 他们眼睛有问题","D. 他们喜欢皇帝"],answer:1},
-        {q:"3. 最后谁说了真话？",options:["A. 皇帝","B. 大臣","C. 小孩","D. 骗子"],answer:2},
-        {q:"4. 这篇童话讽刺的是什么？",options:["A. 衣服不好看","B. 社会的虚伪和虚荣","C. 骗子太聪明","D. 皇帝太穷"],answer:1}
-      ]},
-      {type:"task",title:"📋 今日任务",tasks:[
-        {text:"朗读课文1遍，找出夸张的描写",tag:"read"},
-        {text:"抄写重点字词（每个2遍）",tag:"write"},
-        {text:"思考：为什么大人不敢说真话？",tag:"practice"}
-      ]}
-    ]},
-    math:{title:"第四章·几何图形初步综合复习",
-    sections:[
-      {type:"objectives",title:"🎯 今天要学什么？",items:[
-        {icon:"📐",label:"回顾第四章全章知识点",desc:"立体→平面→线段→角"},
-        {icon:"🧠",label:"用思维导图总结",desc:"建立几何知识体系"}
-      ]},
-      {type:"knowledge",title:"📐 第四章知识导图",body:`
-        <div style="background:#F0FFF4;padding:12px;border-radius:8px;">
-          <p style="font-weight:bold;text-align:center;">🧠 几何图形初步</p>
-          <p>├─ 立体图形 vs 平面图形</p>
-          <p>│  ├ 柱体·锥体·球体·正方体展开图</p>
-          <p>├─ 直线、射线、线段</p>
-          <p>│  ├ 两点确定一条直线</p>
-          <p>│  ├ 两点之间线段最短</p>
-          <p>│  └ 线段的中点</p>
-          <p>└─ 角</p>
-          <p>   ├ 角的度量（度分秒）</p>
-          <p>   ├ 角的分类（锐·直·钝·平·周）</p>
-          <p>   ├ 角的和差计算</p>
-          <p>   └ 余角和补角</p>
-        </div>
-      `},
-      {type:"practice",title:"📝 综合练习",questions:[
-        {q:"1. 正方形是立体图形吗？",options:["A. 是","B. 不是，是平面图形","C. 既是也是","D. 都不是"],answer:1},
-        {q:"2. 60°的余角是？",options:["A. 30°","B. 60°","C. 90°","D. 120°"],answer:0},
-        {q:"3. 两点之间的最短距离是？",options:["A. 直线","B. 射线","C. 线段","D. 曲线"],answer:2},
-        {q:"4. 正方体展开图共有几种？",options:["A. 6","B. 8","C. 11","D. 12"],answer:2}
-      ]},
-      {type:"task",title:"📋 今日任务",tasks:[
-        {text:"画第四章完整思维导图",tag:"write"},
-        {text:"完成单元综合练习题",tag:"practice"},
-        {text:"错题本整理",tag:"practice"}
-      ]}
-    ]},
-    english:{title:"Starter Units + Unit 1-4 期中复习",
-    sections:[
-      {type:"objectives",title:"🎯 今天要学什么？",items:[
-        {icon:"🔄",label:"复习Starter-U4全部内容",desc:"字母和基础句型"},
-        {icon:"📝",label:"巩固be动词用法",desc:"am/is/are 的完整总结"}
-      ]},
-      {type:"knowledge",title:"📚 be动词总结",body:`
-        <div style="background:#E8F0FE;padding:10px;border-radius:8px;">
-          <p><strong>be动词口诀：</strong></p>
-          <p style="font-size:1.05rem;">I用am，you用are，is用于他她它</p>
-          <p>单数名词用is，复数名词全用are</p>
-        </div>
-        <div style="background:#FFF7E6;padding:10px;border-radius:8px;margin-top:6px;">
-          <p><strong>注意：</strong>英语中be动词和实义动词不能同时作谓语</p>
-          <p>❌ I am like bananas.</p>
-          <p>✅ I like bananas.（实义动词）</p>
-          <p>✅ I am a student.（be动词）</p>
-        </div>
-      `},
-      {type:"task",title:"📋 今日任务",tasks:[
-        {text:"复习字母表+音标对照",tag:"read"},
-        {text:"做be动词练习题",tag:"practice"},
-        {text:"主动回忆法：回忆Starter-U4全部句型",tag:"recite"}
-      ]}
-    ]}
-  }
-})
 
 
-COURSE_DATA.push({
-  day:29,date:"7月30日",weekday:"周四",difficulty:"中等偏难",focus:"《天上的街市》·全册数学总复习·英语总复习(上)",
-  subjects:{
-    chinese:{title:"第20课《天上的街市》·郭沫若+《女娲造人》",
-    sections:[
-      {type:"objectives",title:"🎯 今天要学什么？",items:[
-        {icon:"🌟",label:"理解现代诗的意象",desc:"天上的街市象征什么"},
-        {icon:"📖",label:"了解联想和想象",desc:"诗人如何从街灯联想到天上"}
-      ]},
-      {type:"knowledge",title:"👤 作者与背景",body:`
-        <p><strong>郭沫若</strong>（1892-1978）：中国现代著名诗人、历史学家。</p>
-        <p>《天上的街市》写于1921年，当时中国社会黑暗动荡，诗人通过想象一个美好的天上世界来表达对光明的向往。</p>
-        <p>💡 诗人看到地上的<strong>街灯</strong>，联想到天上的<strong>明星</strong>，再想象出天上的街市——这就是<strong>联想和想象</strong>的写作手法。</p>
-      `},
-      {type:"knowledge",title:"💡 联想与想象的区别",body:`
-        <p><strong>联想：</strong>由一事物想到另一事物（两者之间有联系）</p>
-        <p>街灯 ↔ 明星（都是发光体）</p>
-        <p><strong>想象：</strong>创造出新的事物或场景</p>
-        <p>想象出天上有街市、牛郎织女在天街闲游</p>
-      `},
-      {type:"practice",title:"📝 练习",questions:[
-        {q:"1. '天上的街市'表达了诗人什么情感？",options:["A. 对黑暗现实的不满和对光明的向往","B. 想去天上玩","C. 喜欢逛街","D. 想变成星星"],answer:0},
-        {q:"2. '街灯'和'明星'之间的联系是？",options:["A. 形状相似","B. 都会发光","C. 颜色相同","D. 位置相同"],answer:1},
-        {q:"3. 联想和想象的区别是？",options:["A. 一样","B. 联想基于现实联系，想象创造新事物","C. 联想更难","D. 想象更简单"],answer:1}
-      ]},
-      {type:"task",title:"📋 今日任务",tasks:[
-        {text:"朗读并背诵全诗",tag:"recite"},
-        {text:"抄写全诗并批改",tag:"write"},
-        {text:"用联想写一段话（如：看到下雨想到什么）",tag:"practice"}
-      ]}
-    ]},
-    math:{title:"七年级上册·数学全册综合复习(上)",
-    sections:[
-      {type:"objectives",title:"🎯 今天要学什么？",items:[
-        {icon:"📚",label:"回顾第一二章",desc:"有理数+整式的加减"},
-        {icon:"🧠",label:"用大思维导图构建知识体系",desc:"找出关联"}
-      ]},
-      {type:"knowledge",title:"📐 全册知识框架",body:`
-        <div style="background:#F0FFF4;padding:12px;border-radius:8px;">
-          <p style="font-weight:bold;text-align:center;">🧠 七年级上册数学</p>
-          <p>第一章 <strong>有理数</strong></p>
-          <p>├ 正负数·数轴·相反数·绝对值</p>
-          <p>├ 加减乘除乘方·科学记数法</p>
-          <p>└ 混合运算</p>
-          <p>第二章 <strong>整式的加减</strong></p>
-          <p>├ 单项式·多项式·同类项</p>
-          <p>├ 合并同类项·去括号</p>
-          <p>└ 整式的加减运算</p>
-          <p>第三章 <strong>一元一次方程</strong></p>
-          <p>├ 解法五步·应用题</p>
-          <p>第四章 <strong>几何图形初步</strong></p>
-          <p>├ 线·角·余角补角</p>
-        </div>
-      `},
-      {type:"practice",title:"📝 综合练习",questions:[
-        {q:"1. |-5| = ?",options:["A. -5","B. 0","C. 5","D. 10"],answer:2},
-        {q:"2. -(-3)+(-5) = ?",options:["A. -8","B. -2","C. 2","D. 8"],answer:1},
-        {q:"3. 2(a-3)+4 = ?去括号后＝",options:["A. 2a-6+4","B. 2a-3+4","C. 2a+6+4","D. 2a-6-4"],answer:0}
-      ]},
-      {type:"task",title:"📋 今日任务",tasks:[
-        {text:"画全册知识框架图",tag:"write"},
-        {text:"做综合练习题（各章选3道）",tag:"practice"},
-        {text:"整理错题本",tag:"practice"}
-      ]}
-    ]},
-    english:{title:"七年级上册·英语总复习(上) — 预备篇+U1-4",
-    sections:[
-      {type:"objectives",title:"🎯 今天要学什么？",items:[
-        {icon:"🔄",label:"总复习Starter-U4",desc:"字母、问候、be动词"},
-        {icon:"✍️",label:"重点句型归纳",desc:"This/That/These/Those"}
-      ]},
-      {type:"knowledge",title:"📚 重点句型归纳",body:`
-        <table style="width:100%;border-collapse:collapse;font-size:0.85rem;">
-          <tr style="background:#E8F0FE;"><th style="padding:4px;border:1px solid #ddd;">句型</th><th style="padding:4px;border:1px solid #ddd;">例句</th></tr>
-          <tr><td style="padding:4px;border:1px solid #ddd;">问候</td><td style="padding:4px;border:1px solid #ddd;">Good morning! / How are you?</td></tr>
-          <tr><td style="padding:4px;border:1px solid #ddd;">介绍</td><td style="padding:4px;border:1px solid #ddd;">This is my sister. / These are my parents.</td></tr>
-          <tr><td style="padding:4px;border:1px solid #ddd;">所属</td><td style="padding:4px;border:1px solid #ddd;">Is this your pencil? / It's mine.</td></tr>
-          <tr><td style="padding:4px;border:1px solid #ddd;">方位</td><td style="padding:4px;border:1px solid #ddd;">Where's my schoolbag? It's on the desk.</td></tr>
-        </table>
-      `},
-      {type:"task",title:"📋 今日任务",tasks:[
-        {text:"复习Starter-U4单词和句型",tag:"read"},
-        {text:"做总复习练习题",tag:"practice"},
-        {text:"背诵重点句型",tag:"recite"}
-      ]}
-    ]}
+</script>
+<script>
+﻿/* ========================================
+   暑期作业Web应用主逻辑
+   ======================================== */
+var App = {
+  currentDay: 1,
+  currentSubject: "chinese",
+  
+  init: function() {
+    this.loadProgress();
+    this.renderDaySelector();
+    this.renderDay(1);
+    this.renderProgress();
+    this.bindEvents();
+  },
+  
+  // 加载本地存储进度
+  loadProgress: function() {
+    try {
+      this.progress = JSON.parse(localStorage.getItem("summerProgress")) || {};
+    } catch(e) {
+      this.progress = {};
+    }
+  },
+  
+  saveProgress: function() {
+    localStorage.setItem("summerProgress", JSON.stringify(this.progress));
+  },
+  
+  // 获取某天的完成状态
+  getDayStatus: function(day) {
+    var p = this.progress[day];
+    if (!p) return {chinese:[], math:[], english:[]};
+    return p;
+  },
+  
+  toggleTask: function(day, subject, taskIndex) {
+    if (!this.progress[day]) this.progress[day] = {chinese:[], math:[], english:[]};
+    var tasks = this.progress[day][subject];
+    var idx = tasks.indexOf(taskIndex);
+    if (idx > -1) tasks.splice(idx, 1);
+    else tasks.push(taskIndex);
+    this.saveProgress();
+    this.renderDay(day);
+    this.renderProgress();
+    this.renderDaySelector();
+  },
+  
+  // 渲染日期选择器
+  renderDaySelector: function() {
+    var html = "";
+    for (var i = 1; i <= 30; i++) {
+      var cls = "day-dot";
+      if (i === this.currentDay) cls += " active";
+      var dayData = this.getDayStatus(i);
+      var totalDone = dayData.chinese.length + dayData.math.length + dayData.english.length;
+      if (totalDone > 0) cls += " completed";
+      html += "<div class=\"" + cls + "\" data-day=\"" + i + "\">" + i + "</div>";
+    }
+    document.getElementById("daySelector").innerHTML = html;
+  },
+  
+  // 渲染某一天的内容
+  renderDay: function(dayNum) {
+    this.currentDay = dayNum;
+    var dayData = this.getDayData(dayNum);
+    if (!dayData) {
+      document.getElementById("contentArea").innerHTML = "<div class='empty-state'><div class='icon'>📚</div><div class='text'>内容加载中...</div></div>";
+      return;
+    }
+    
+    // 更新顶部信息
+    document.getElementById("dayNum").textContent = "第" + dayNum + "天";
+    document.getElementById("dayDate").textContent = dayData.date + " " + dayData.weekday;
+    document.getElementById("dayDifficulty").textContent = "难度：" + dayData.difficulty;
+    document.getElementById("dayFocus").textContent = "今日重点：" + dayData.focus;
+    
+    // 渲染摘要条
+    this.renderSummary(dayData);
+    
+    // 渲染科目标签
+    this.renderSubjectTabs(dayData);
+    
+    // 渲染当前科目的内容
+    this.renderSubjectContent(dayData, this.currentSubject);
+    
+    // 滚动到顶部
+    window.scrollTo({top: 0, behavior: "smooth"});
+  },
+  
+  getDayData: function(day) {
+    // 从全局 COURSE_DATA 查找
+    for (var i = 0; i < COURSE_DATA.length; i++) {
+      if (COURSE_DATA[i].day === day) return COURSE_DATA[i];
+    }
+    return null;
+  },
+  
+  renderSummary: function(dayData) {
+    var subjects = ["chinese","math","english"];
+    var names = {"chinese":"语文","math":"数学","english":"英语"};
+    var classes = {"chinese":"chinese","math":"math","english":"english"};
+    var html = "";
+    for (var i = 0; i < subjects.length; i++) {
+      var s = subjects[i];
+      var tasks = dayData.subjects[s].sections;
+      var taskCount = 0;
+      for (var t = 0; t < tasks.length; t++) {
+        if (tasks[t].type === "task" && tasks[t].tasks) {
+          taskCount += tasks[t].tasks.length;
+        }
+      }
+      var done = this.progress[dayData.day] ? (this.progress[dayData.day][s] || []).length : 0;
+      html += "<div class='summary-item " + classes[s] + "'><div class='label'>" + names[s] + "</div><div class='value'>" + done + "/" + taskCount + "</div></div>";
+    }
+    document.getElementById("summaryBar").innerHTML = html;
+  },
+  
+  renderSubjectTabs: function(dayData) {
+    var subjects = ["chinese","math","english"];
+    var names = {"chinese":"📖 语文","math":"📐 数学","english":"🌍 英语"};
+    var classes = {"chinese":"chinese","math":"math","english":"english"};
+    var html = "";
+    for (var i = 0; i < subjects.length; i++) {
+      var s = subjects[i];
+      var tasks = dayData.subjects[s].sections;
+      var total = 0;
+      for (var t = 0; t < tasks.length; t++) {
+        if (tasks[t].type === "task" && tasks[t].tasks) total += tasks[t].tasks.length;
+      }
+      var done = this.progress[dayData.day] ? (this.progress[dayData.day][s] || []).length : 0;
+      var check = total > 0 && done >= total ? " ✅" : (done > 0 ? " 🔄" : "");
+      var active = s === this.currentSubject ? " active" : "";
+      html += "<button class='subject-tab " + classes[s] + active + "' data-subject='" + s + "'>" + names[s] + "<span class='check-icon'>" + check + "</span></button>";
+    }
+    document.getElementById("subjectTabs").innerHTML = html;
+  },
+  
+  renderSubjectContent: function(dayData, subject) {
+    var content = dayData.subjects[subject];
+    if (!content) return;
+    
+    var title = content.title;
+    var preview = content.preview || "";
+    var sections = content.sections;
+    
+    // 构建标题区
+    var html = "<div class='content-section'><div class='section-title'><span>📖</span>" + title + "</div>";
+    if (preview) html += "<p style='font-size:0.85rem;color:#718096;margin-bottom:10px;line-height:1.6;'>" + preview + "</p></div>";
+    
+    // 构建各区内容
+    for (var i = 0; i < sections.length; i++) {
+      html += this.renderSection(sections[i], dayData.day, subject, i);
+    }
+    
+    // 添加手写板
+    html += this.renderWhiteboard(subject);
+    
+    document.getElementById("dayContent").innerHTML = html;
+    document.getElementById("dayContent").className = "day-content active";
+    
+    // 重新绑定事件
+    this.bindSectionEvents(dayData.day, subject);
+  },
+  
+  renderSection: function(section, day, subject, sectionIdx) {
+    var html = "<div class='content-section'>";
+    
+    switch(section.type) {
+      case "objectives":
+        html += "<div class='objectives-card'><div class='obj-header'><span>🎯</span>" + (section.title || "今日学习目标") + "</div><div class='obj-body'>";
+        for (var oi = 0; oi < section.items.length; oi++) {
+          html += "<div class='obj-item'><div class='obj-icon'>" + (section.items[oi].icon || "📌") + "</div><div class='obj-text'><strong>" + section.items[oi].label + "</strong><br><span style='font-size:0.82rem;color:#4A5568;'>" + section.items[oi].desc + "</span></div></div>";
+        }
+        if (section.why) html += "<div class='obj-why'>💡 <strong>为什么学这个？</strong><br>" + section.why + "</div>";
+        html += "</div>";
+        break;
+      case "mindmap":
+        html += "<div class='mindmap-card'><div class='section-title'><span>🧠</span>" + (section.title || "知识结构") + "</div>";
+        html += "<div class='mindmap-node center'>" + section.center + "</div>";
+        for (var mi = 0; mi < section.branches.length; mi++) {
+          html += "<div class='mindmap-branch'><div class='branch-label'>" + section.branches[mi].label + "</div>";
+          for (var mj = 0; mj < section.branches[mi].items.length; mj++) {
+            html += "<div class='branch-item'>" + section.branches[mi].items[mj] + "</div>";
+          }
+          html += "</div>";
+        }
+        html += "</div>";
+        break;
+      case "knowledge":
+        html += "<div class='section-title'><span>📝</span>" + (section.title || "知识点") + "</div>";
+        html += "<div class='knowledge-card'><div class='body'>" + section.body + "</div></div>";
+        break;
+        
+      case "poem":
+        html += "<div class='section-title'><span>📜</span>" + (section.title || "古诗") + "</div>";
+        html += "<div class='poem-card'>";
+        html += "<div class='poem-title'>" + section.poem + "</div>";
+        html += "<div class='poem-author'>" + section.author + "</div>";
+        html += "<div class='poem-content'>" + section.content + "</div>";
+        if (section.translation) html += "<div class='poem-translation'>" + section.translation + "</div>";
+        html += "</div>";
+        break;
+        
+      case "phonetic":
+        html += "<div class='section-title'><span>🔊</span>" + (section.title || "音标") + "</div>";
+        html += "<div class='phonetic-card'>";
+        for (var p = 0; p < section.items.length; p++) {
+          html += "<div class='phonetic-item'><div class='symbol'>" + section.items[p].symbol + "</div><div class='example'>" + section.items[p].example + "</div>";
+          if (section.items[p].compare) html += "<div style='font-size:0.72rem;color:#718096;margin-top:2px;'>" + section.items[p].compare + "</div>";
+          html += "</div>";
+        }
+        html += "</div>";
+        break;
+        
+      case "math-formula":
+        html += "<div class='section-title'><span>🧮</span>" + (section.title || "公式") + "</div>";
+        html += "<div class='math-formula'>" + section.formula + "<div class='explain'>" + section.explain + "</div></div>";
+        break;
+        
+      case "math-example":
+        html += "<div class='section-title'><span>✏️</span>" + (section.title || "例题") + "</div>";
+        html += "<div class='math-example'><div style='font-weight:700;margin-bottom:4px;'>" + section.content + "</div>";
+        if (section.steps) html += section.steps;
+        html += "</div>";
+        break;
+        
+      case "practice":
+        html += "<div class='section-title'><span>📝</span>" + (section.title || "练习题") + "</div>";
+        for (var q = 0; q < section.questions.length; q++) {
+          var qData = section.questions[q];
+          html += "<div class='practice-box'>";
+          html += "<div class='question'>" + qData.q + "</div>";
+          if (qData.hint) html += "<div class='hint' onclick=\"this.nextElementSibling.style.display='block'\">💡 查看提示</div><div class='answer-reveal'><strong>提示：</strong>" + qData.hint + "</div>";
+          if (qData.answer) html += "<div class='hint' style='color:#52C41A;' onclick=\"this.nextElementSibling.style.display='block'\">✅ 查看答案</div><div class='answer-reveal'><strong>答案：</strong>" + qData.answer + "</div>";
+          html += "</div>";
+        }
+        break;
+        
+      case "quiz":
+        html += "<div class='section-title'><span>" + (section.title.includes("测验")?"📝":"❓") + "</span>" + (section.title || "小测验") + "</div>";
+        for (var qz = 0; qz < section.questions.length; qz++) {
+          var q = section.questions[qz];
+          html += "<div class='quiz-card' data-quiz='" + qz + "'>";
+          html += "<div class='question'>" + q.q + "</div>";
+          html += "<div class='quiz-options'>";
+          for (var o = 0; o < q.options.length; o++) {
+            html += "<div class='quiz-option' data-opt='" + o + "' data-correct='" + (o === q.answer) + "'>" + q.options[o] + "</div>";
+          }
+          html += "</div><div class='quiz-result'></div></div>";
+        }
+        break;
+        
+      case "task":
+        html += "<div class='section-title'><span>✅</span>" + (section.title || "任务清单") + "</div>";
+        html += "<ul class='task-list'>";
+        var dayStatus = this.progress[day] || {};
+        var doneTasks = dayStatus[subject] || [];
+        var offset = 0;
+        for (var sc2 = 0; sc2 < sectionIdx; sc2++) {
+          var s = this.getDayData(day);
+          if (s && s.subjects[subject].sections[sc2].type === "task") {
+            offset += s.subjects[subject].sections[sc2].tasks.length;
+          }
+        }
+        for (var t = 0; t < section.tasks.length; t++) {
+          var task = section.tasks[t];
+          var isDone = doneTasks.indexOf(offset + t) > -1;
+          html += "<li class='task-item" + (isDone ? " done" : "") + "' data-day='" + day + "' data-subject='" + subject + "' data-idx='" + (offset + t) + "'>";
+          html += "<div class='task-check'>" + (isDone ? "✓" : "") + "</div>";
+          html += "<div class='task-text'><span class='tag tag-" + task.tag + "'>" + this.getTagName(task.tag) + "</span>" + task.text + "</div>";
+          html += "</li>";
+        }
+        html += "</ul>";
+        break;
+    }
+    
+    html += "</div>";
+    return html;
+  },
+  
+  getTagName: function(tag) {
+    var map = {read:"朗读",write:"抄写",copy:"抄写",recite:"背诵",practice:"练习",video:"视频",audio:"音频"};
+    return map[tag] || tag;
+  },
+  
+  renderWhiteboard: function(subject) {
+    var height = subject === "math" ? "280px" : "200px";
+    return "<div class='whiteboard-section content-section'><div class='section-title'><span>✍️</span>手写板（iPad可用笔书写）</div>" +
+      "<div class='whiteboard-toolbar'>" +
+      "<button class='active' data-color='#2D3748'>⚫黑</button>" +
+      "<button data-color='#D94A4A'>🔴红</button>" +
+      "<button data-color='#2B6CB0'>🔵蓝</button>" +
+      "<button data-color='#38A169'>🟢绿</button>" +
+      "<button id='clearBoard'>🗑️清除</button>" +
+      "</div>" +
+      "<canvas class='whiteboard-canvas' id='whiteboard' style='height:" + height + "'></canvas></div>";
+  },
+  
+  bindSectionEvents: function(day, subject) {
+    var self = this;
+    
+    // 任务点击
+    var tasks = document.querySelectorAll(".task-item");
+    for (var i = 0; i < tasks.length; i++) {
+      tasks[i].addEventListener("click", function(e) {
+        var d = parseInt(this.getAttribute("data-day"));
+        var s = this.getAttribute("data-subject");
+        var idx = parseInt(this.getAttribute("data-idx"));
+        self.toggleTask(d, s, idx);
+      });
+    }
+    
+    // 测验选项点击
+    var quizOpts = document.querySelectorAll(".quiz-option");
+    for (var j = 0; j < quizOpts.length; j++) {
+      quizOpts[j].addEventListener("click", function(e) {
+        var parent = this.closest(".quiz-card");
+        var result = parent.querySelector(".quiz-result");
+        var isCorrect = this.getAttribute("data-correct") === "true";
+        // 清除其他选中
+        var siblings = parent.querySelectorAll(".quiz-option");
+        for (var k = 0; k < siblings.length; k++) {
+          siblings[k].className = siblings[k].className.replace(" selected", "");
+        }
+        this.className += " selected";
+        if (isCorrect) {
+          this.className += " correct";
+          result.className = "quiz-result correct";
+          result.textContent = "✅ 正确！";
+        } else {
+          this.className += " wrong";
+          result.className = "quiz-result wrong";
+          result.textContent = "❌ 再想想哦~";
+          // 显示正确答案
+          for (var k2 = 0; k2 < siblings.length; k2++) {
+            if (siblings[k2].getAttribute("data-correct") === "true") {
+              siblings[k2].className += " correct";
+            }
+          }
+        }
+      });
+    }
+    
+    // 手写板
+    this.initWhiteboard();
+  },
+  
+  initWhiteboard: function() {
+    var canvas = document.getElementById("whiteboard");
+    if (!canvas) return;
+    
+    var ctx = canvas.getContext("2d");
+    var drawing = false;
+    var color = "#2D3748";
+    var lineWidth = 3;
+    
+    function resize() {
+      var rect = canvas.parentElement.getBoundingClientRect();
+      canvas.width = canvas.clientWidth;
+      canvas.height = canvas.clientHeight;
+      ctx.lineCap = "round";
+      ctx.lineJoin = "round";
+    }
+    resize();
+    window.addEventListener("resize", resize);
+    
+    function getPos(e) {
+      var rect = canvas.getBoundingClientRect();
+      var clientX = e.touches ? e.touches[0].clientX : e.clientX;
+      var clientY = e.touches ? e.touches[0].clientY : e.clientY;
+      return {x: clientX - rect.left, y: clientY - rect.top};
+    }
+    
+    function startDraw(e) {
+      e.preventDefault();
+      drawing = true;
+      var pos = getPos(e);
+      ctx.beginPath();
+      ctx.moveTo(pos.x, pos.y);
+    }
+    
+    function draw(e) {
+      e.preventDefault();
+      if (!drawing) return;
+      var pos = getPos(e);
+      ctx.strokeStyle = color;
+      ctx.lineWidth = lineWidth;
+      ctx.lineTo(pos.x, pos.y);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.moveTo(pos.x, pos.y);
+    }
+    
+    function stopDraw(e) {
+      drawing = false;
+      ctx.beginPath();
+    }
+    
+    canvas.addEventListener("mousedown", startDraw);
+    canvas.addEventListener("mousemove", draw);
+    canvas.addEventListener("mouseup", stopDraw);
+    canvas.addEventListener("mouseleave", stopDraw);
+    canvas.addEventListener("touchstart", startDraw, {passive: false});
+    canvas.addEventListener("touchmove", draw, {passive: false});
+    canvas.addEventListener("touchend", stopDraw);
+    
+    // 颜色切换
+    var colorBtns = document.querySelectorAll(".whiteboard-toolbar button[data-color]");
+    for (var i = 0; i < colorBtns.length; i++) {
+      colorBtns[i].addEventListener("click", function() {
+        var siblings = this.parentElement.querySelectorAll("button[data-color]");
+        for (var j = 0; j < siblings.length; j++) siblings[j].className = "";
+        this.className = "active";
+        color = this.getAttribute("data-color");
+      });
+    }
+    
+    // 清除
+    var clearBtn = document.getElementById("clearBoard");
+    if (clearBtn) {
+      clearBtn.addEventListener("click", function() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      });
+    }
+  },
+  
+  renderProgress: function() {
+    var totalTasks = 0;
+    var totalDone = 0;
+    var chineseDone = 0, mathDone = 0, englishDone = 0;
+    var chineseTotal = 0, mathTotal = 0, englishTotal = 0;
+    
+    for (var d = 0; d < COURSE_DATA.length; d++) {
+      var day = COURSE_DATA[d];
+      if (!day) continue;
+      var subjects = ["chinese","math","english"];
+      for (var s = 0; s < subjects.length; s++) {
+        var subj = subjects[s];
+        var sections = day.subjects[subj].sections;
+        for (var sec = 0; sec < sections.length; sec++) {
+          if (sections[sec].type === "task" && sections[sec].tasks) {
+            var cnt = sections[sec].tasks.length;
+            totalTasks += cnt;
+            if (subj === "chinese") chineseTotal += cnt;
+            else if (subj === "math") mathTotal += cnt;
+            else if (subj === "english") englishTotal += cnt;
+          }
+        }
+      }
+      var dayP = this.progress[day.day];
+      if (dayP) {
+        for (var s2 = 0; s2 < subjects.length; s2++) {
+          var subj2 = subjects[s2];
+          var done = (dayP[subj2] || []).length;
+          totalDone += done;
+          if (subj2 === "chinese") chineseDone += done;
+          else if (subj2 === "math") mathDone += done;
+          else if (subj2 === "english") englishDone += done;
+        }
+      }
+    }
+    
+    var pct = totalTasks > 0 ? Math.round(totalDone / totalTasks * 100) : 0;
+    var chPct = chineseTotal > 0 ? Math.round(chineseDone / chineseTotal * 100) : 0;
+    var maPct = mathTotal > 0 ? Math.round(mathDone / mathTotal * 100) : 0;
+    var enPct = englishTotal > 0 ? Math.round(englishDone / englishTotal * 100) : 0;
+    
+    document.getElementById("progressPanel").innerHTML =
+      "<h3>📊 总学习进度</h3>" +
+      "<div style='margin:6px 0'><div style='display:flex;justify-content:space-between;font-size:0.78rem;margin-bottom:2px;'><span>语文</span><span>" + chineseDone + "/" + chineseTotal + "</span></div><div class='progress-bar'><div class='fill chinese' style='width:" + chPct + "%'></div></div></div>" +
+      "<div style='margin:6px 0'><div style='display:flex;justify-content:space-between;font-size:0.78rem;margin-bottom:2px;'><span>数学</span><span>" + mathDone + "/" + mathTotal + "</span></div><div class='progress-bar'><div class='fill math' style='width:" + maPct + "%'></div></div></div>" +
+      "<div style='margin:6px 0'><div style='display:flex;justify-content:space-between;font-size:0.78rem;margin-bottom:2px;'><span>英语</span><span>" + englishDone + "/" + englishTotal + "</span></div><div class='progress-bar'><div class='fill english' style='width:" + enPct + "%'></div></div></div>" +
+      "<div class='progress-stats'>总进度：" + totalDone + "/" + totalTasks + "（" + pct + "%）</div>";
+  },
+  
+  switchSubject: function(subject) {
+    this.currentSubject = subject;
+    var dayData = this.getDayData(this.currentDay);
+    if (dayData) {
+      this.renderSubjectTabs(dayData);
+      this.renderSubjectContent(dayData, subject);
+    }
+  },
+  
+  goToDay: function(day) {
+    if (day < 1 || day > 30) return;
+    this.currentDay = day;
+    this.renderDay(day);
+    this.renderDaySelector();
+  },
+  
+  bindEvents: function() {
+    var self = this;
+    
+    // 日期选择器点击（事件委托）
+    document.getElementById("daySelector").addEventListener("click", function(e) {
+      var dot = e.target.closest(".day-dot");
+      if (dot) {
+        var day = parseInt(dot.getAttribute("data-day"));
+        self.goToDay(day);
+      }
+    });
+    
+    // 科目标签点击（事件委托）
+    document.getElementById("subjectTabs").addEventListener("click", function(e) {
+      var tab = e.target.closest(".subject-tab");
+      if (tab) {
+        self.switchSubject(tab.getAttribute("data-subject"));
+      }
+    });
+    
+    // 前一天
+    document.getElementById("prevDay").addEventListener("click", function() {
+      self.goToDay(self.currentDay - 1);
+    });
+    
+    // 后一天
+    document.getElementById("nextDay").addEventListener("click", function() {
+      self.goToDay(self.currentDay + 1);
+    });
+    
+    // 进度面板
+    document.getElementById("showProgress").addEventListener("click", function() {
+      var modal = document.getElementById("progressModal");
+      modal.className = "modal-overlay show";
+    });
+    
+    // 关闭模态框
+    document.getElementById("progressModal").addEventListener("click", function(e) {
+      if (e.target === this) this.className = "modal-overlay";
+    });
   }
-})
+};
 
-COURSE_DATA.push({
-  day:30,date:"7月31日",weekday:"周五",difficulty:"中等",focus:"第六单元复习·全册总复习·英语总复习(下)+暑期总结",
-  subjects:{
-    chinese:{title:"第六单元复习 + 暑期总结",
-    sections:[
-      {type:"objectives",title:"🎯 今天要学什么？",items:[
-        {icon:"🎉",label:"完成30天暑期学习",desc:"回顾整个暑期学习成果"},
-        {icon:"📝",label:"第六单元复习",desc:"童话、现代诗、神话"}
-      ]},
-      {type:"knowledge",title:"📖 第六单元总结",body:`
-        <div style="background:#F0FFF4;padding:10px;border-radius:8px;">
-          <p><strong>本单元三课：</strong></p>
-          <p>👑 《皇帝的新装》— 安徒生童话·讽刺虚伪</p>
-          <p>🌟 《天上的街市》— 郭沫若诗歌·向往光明</p>
-          <p>🗿 《女娲造人》— 中国古代神话·想象力</p>
-        </div>
-        <p style="margin-top:8px;">💡 <strong>共同点：</strong>都运用了<strong>丰富的想象力</strong>！</p>
-        <p>安徒生想象出骗子的骗局，郭沫若想象出天上的街市，女娲想象出创造人类的方法。</p>
-        <p><strong>想象力=创造力！</strong>这个暑假你学会的最重要的能力就是——用想象力去学习和创造！</p>
-      `},
-      {type:"practice",title:"🎯 暑期总结思考",questions:[
-        {q:"1. 这个暑假你最喜欢哪篇课文？",options:["A. 春","B. 论语","C. 皇帝的新装","D. 其他"],answer:3},
-        {q:"2. 哪种学习方法你觉得最有用？",options:["A. 费曼学习法","B. 番茄工作法","C. 主动回忆法","D. 所有方法都有用"],answer:3},
-        {q:"3. 新学期你最期待学什么？",options:["A. 语文","B. 数学","C. 英语","D. 全部"],answer:3}
-      ]},
-      {type:"task",title:"📋 暑期总结任务",tasks:[
-        {text:"回顾30天学习笔记和错题本",tag:"read"},
-        {text:"写一篇300字的暑期学习总结",tag:"write"},
-        {text:"给自己定新学期的目标",tag:"practice"},
-        {text:"和家长一起看学习报告",tag:"practice"}
-      ]}
-    ]},
-    math:{title:"七年级上册·数学全册综合复习(下)+暑期总结",
-    sections:[
-      {type:"objectives",title:"🎯 今天要学什么？",items:[
-        {icon:"📚",label:"回顾第三四章",desc:"一元一次方程+几何初步"},
-        {icon:"🏆",label:"完成综合测试",desc:"检验学习成果"}
-      ]},
-      {type:"knowledge",title:"📐 重点公式卡片",body:`
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
-          <div style="background:#E8F0FE;padding:8px;border-radius:8px;font-size:0.85rem;">
-            <strong>绝对值</strong><br>|a|≥0<br>|a|=a(a≥0)<br>|a|=-a(a<0)
-          </div>
-          <div style="background:#FFF7E6;padding:8px;border-radius:8px;font-size:0.85rem;">
-            <strong>行程问题</strong><br>路程=速度×时间<br>相遇:(v1+v2)t=s<br>追及:(v1-v2)t=s
-          </div>
-          <div style="background:#F0FFF4;padding:8px;border-radius:8px;font-size:0.85rem;">
-            <strong>移项</strong><br>过河要变号！<br>+变-，-变+
-          </div>
-          <div style="background:#FEF0F0;padding:8px;border-radius:8px;font-size:0.85rem;">
-            <strong>余角补角</strong><br>余角:∠A+∠B=90°<br>补角:∠A+∠B=180°
-          </div>
-        </div>
-      `},
-      {type:"practice",title:"📝 暑期数学总结",questions:[
-        {q:"1. 暑假你学了几章数学？",options:["A. 2章","B. 3章","C. 4章","D. 5章"],answer:2},
-        {q:"2. 你觉得自己哪章掌握得最好？",options:["A. 有理数","B. 整式","C. 方程","D. 几何"],answer:3}
-      ]},
-      {type:"task",title:"📋 今日任务",tasks:[
-        {text:"完成综合测试卷",tag:"practice"},
-        {text:"整理错题本并总结",tag:"practice"},
-        {text:"画一张给自己鼓励的数学卡片",tag:"practice"}
-      ]}
-    ]},
-    english:{title:"七年级上册·英语总复习(下) + 暑期成果",
-    sections:[
-      {type:"objectives",title:"🎯 今天要学什么？",items:[
-        {icon:"🎉",label:"完成英语全部复习",desc:"U5-9重点回顾"},
-        {icon:"📝",label:"暑期英语成果总结",desc:"单词/句型/音标进步"}
-      ]},
-      {type:"knowledge",title:"📚 U5-9 核心句型",body:`
-        <div style="background:#E8F0FE;padding:10px;border-radius:8px;">
-          <p><strong>Unit 5：</strong>Do you have...? / Let's play...</p>
-          <p><strong>Unit 6：</strong>Do you like...? / I like... / He likes...</p>
-          <p><strong>Unit 7：</strong>How much is/are...? / Can I help you?</p>
-          <p><strong>Unit 8：</strong>When is your birthday? / My birthday is on...</p>
-          <p><strong>Unit 9：</strong>What's your favorite subject? / Why? / Because...</p>
-        </div>
-      `},
-      {type:"knowledge",title:"💡 音标学习总结",body:`
-        <p>这个暑假你学会了<strong>48个国际音标</strong>！</p>
-        <p>💡 <strong>学习窍门回顾：</strong></p>
-        <p>• 音标像中文拼音——"拼"出来就好了！</p>
-        <p>• 长音拉长读，短音短促读</p>
-        <p>• 双元音从第一个位置"滑"到第二个</p>
-        <p>• /θ/和/ð/要咬舌头——这是英语特色！</p>
-        <p>• <strong>-ing延伸法：</strong>记住一个词根，延伸出更多单词</p>
-        <p>• <strong>-ful/-less：</strong>加后缀变新词</p>
-      `},
-      {type:"task",title:"📋 暑期总结任务",tasks:[
-        {text:"读一遍暑期所有单词表",tag:"read"},
-        {text:"写出暑期学会的30个新单词",tag:"write"},
-        {text:"用英语写一段暑期总结（50词）",tag:"practice"},
-        {text:"对自己说：You did it! 🎉",tag:"audio"}
-      ]}
-    ]}
-  }
-})</script>
+// 页面加载完成后初始化
+document.addEventListener("DOMContentLoaded", function() {
+  App.init();
+});
+
+</script>
 <script>
 ﻿/* ========================================
    app-fix.js 最终版 - 含所有增强事件
