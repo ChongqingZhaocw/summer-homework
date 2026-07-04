@@ -4837,7 +4837,11 @@ var App = {
         }
         html += "</ul>";
         break;
-    }
+
+      default:
+        html += '<div class="section-title"><span>📝</span>' + (section.title || '') + '</div>';
+        if (section.body) html += '<div class="knowledge-card"><div class="body">' + section.body + '</div></div>';
+        break;    }
     
     html += "</div>";
     return html;
