@@ -8978,6 +8978,34 @@ App.renderSection = function(section, day, subject, sectionIdx) {
 })();
 
 </script>
-</body>
+
+<script>
+// Diagnostic: check if scripts loaded
+console.log("=== DIAGNOSTIC ===");
+console.log("COURSE_DATA length:", typeof COURSE_DATA !== "undefined" ? COURSE_DATA.length : "UNDEFINED");
+console.log("App exists:", typeof App !== "undefined");
+if (typeof App !== "undefined") {
+  console.log("App.renderDay exists:", typeof App.renderDay);
+  console.log("App.getDayData exists:", typeof App.getDayData);
+  var d1 = App.getDayData ? App.getDayData(1) : "N/A";
+  console.log("Day 1 data:", d1 ? "FOUND" : "NOT FOUND");
+}
+
+// Also do a try-catch render
+try {
+  if (typeof App !== "undefined" && App.renderDay) {
+    App.renderDay(1);
+    console.log("renderDay(1) SUCCESS");
+  }
+} catch(e) {
+  console.error("renderDay(1) ERROR:", e.message);
+  document.getElementById("dayContent").innerHTML = '<div style="padding:20px;color:red;"><b>ERROR:</b> ' + e.message + '<br><pre>' + (e.stack || "") + '</pre></div>';
+}
+
+// Show loading state
+window.addEventListener("load", function() {
+  console.log("Window loaded, dayContent:", document.getElementById("dayContent") ? document.getElementById("dayContent").innerHTML.substring(0,100) : "MISSING");
+});
+</script></body>
 </html>
 
