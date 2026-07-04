@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <title>小升初暑期作业 · 七年级预习计划</title>
 <style>
-﻿/* ========================================
+/* ========================================
    小升初暑期作业 · 七年级预习计划
    iPad自适应样式表
    ======================================== */
@@ -551,7 +551,7 @@ body {
 </style>
 
 <style>
-﻿/* ========================================
+/* ========================================
    增强动画 & 可视化组件
    ======================================== */
 
@@ -1179,7 +1179,7 @@ body {
 
 </style>
 <style>
-﻿/* ========================================
+/* ========================================
    交互学习引擎样式 - Material Design风格
    ======================================== */
 
@@ -1436,7 +1436,7 @@ body {
 
 <!-- 【加载顺序：数据→引擎→增强→评估→课文】 -->
 <script>
-﻿// 课程数据初始化
+// 课程数据初始化
 var COURSE_DATA = [];
 
 </script>
@@ -4613,7 +4613,7 @@ COURSE_DATA.push({
 });;
 </script>
 <script>
-﻿COURSE_DATA.push({
+COURSE_DATA.push({
   day: 2, date: "7月3日", weekday: "周五",
   difficulty: "★★☆ 中等", focus: "《春》精读·数轴入门·问候语+拼读",
   subjects: {
@@ -4983,7 +4983,7 @@ COURSE_DATA.push({
 });
 </script>
 <script>
-﻿COURSE_DATA.push({
+COURSE_DATA.push({
   day:5,date:"7月6日",weekday:"周一",difficulty:"较难",focus:"《雨的四季》·有理数加法·字母S-Z总结",
   subjects:{
     chinese:{title:"第3课《雨的四季》·刘湛秋",
@@ -5115,7 +5115,7 @@ COURSE_DATA.push({
 
 </script>
 <script>
-﻿COURSE_DATA.push({
+COURSE_DATA.push({
   day:8,date:"7月9日",weekday:"周四",difficulty:"中等",focus:"第一单元复习·有理数除法·Unit 1 Section B",
   subjects:{
     chinese:{title:"第一单元综合复习 + 写作指导",
@@ -5239,7 +5239,7 @@ COURSE_DATA.push({
 
 </script>
 <script>
-﻿COURSE_DATA.push({
+COURSE_DATA.push({
   day:11,date:"7月12日",weekday:"周日",difficulty:"中等",focus:"《散步》·第一章总复习·Unit 3 文具",
   subjects:{
     chinese:{title:"第6课《散步》·莫怀戚",
@@ -5441,7 +5441,7 @@ COURSE_DATA.push({
 
 </script>
 <script>
-﻿/* ========================================
+/* ========================================
    暑期作业Web应用主逻辑
    ======================================== */
 var App = {
@@ -5982,7 +5982,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 </script>
 <script>
-﻿/* ========================================
+/* ========================================
    app-fix.js 最终版 - 含所有增强事件
    ======================================== */
 
@@ -6057,7 +6057,7 @@ setTimeout(function() {
 
 </script>
 <script>
-﻿/* ========================================
+/* ========================================
    增强渲染器：时间线、图表、音标动画、语音
    ======================================== */
 
@@ -6346,7 +6346,7 @@ App.showVideoInfo = function(url, search) {
 
 </script>
 <script>
-﻿/* ========================================
+/* ========================================
    开篇故事系统 - 每课的学习动机导入
    ======================================== */
 
@@ -6440,7 +6440,7 @@ App.renderSection = function(section, day, subject, sectionIdx) {
 
 </script>
 <script>
-﻿/* ========================================
+/* ========================================
    自习追踪系统 v2.0
    功能：三阶段打卡、录音、错题本、报告
    ======================================== */
@@ -6748,7 +6748,7 @@ StudyTracker.init();
 
 </script>
 <script>
-﻿/* ========================================
+/* ========================================
    追踪UI v2.0 - 三阶段打卡、录音、错题本、报告
    ======================================== */
 
@@ -7222,7 +7222,7 @@ App.getFunExplanation = function(subject, question, wrong, correct) {
 
 </script>
 <script>
-﻿/* ========================================
+/* ========================================
    掌握度评估系统 v3.0
    功能：自评评级、薄弱点追踪、次日强化、家长看板
    ======================================== */
@@ -7417,7 +7417,7 @@ MasterySystem.init();
 
 </script>
 <script>
-﻿/* ========================================
+/* ========================================
    掌握度评估UI - 自评卡片 + 复习队列 + 家长看板
    ======================================== */
 
@@ -7806,7 +7806,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 </script>
 <script>
-﻿/* ========================================
+/* ========================================
    交互学习引擎 v4.0
    功能：填空答题·语音识别·手写批改·自动评分
    设计：Google Material Design 风格 · iPad触控优化
@@ -8433,7 +8433,7 @@ App.renderSubjectContent = function(dayData, subject) {
 
 </script>
 <script>
-﻿// 兼容浏览器和Node环境的全局变量定义
+// 兼容浏览器和Node环境的全局变量定义
 (function(global) {
   // --- Day 1 英语增强版 ---
   global.enhancedEnglishDay1 = {
@@ -8559,7 +8559,7 @@ App.renderSubjectContent = function(dayData, subject) {
 
 </script>
 <script>
-﻿(function(g) {
+(function(g) {
   // 替换Day 1英语
   if (g.COURSE_DATA[0] && g.COURSE_DATA[0].subjects.english && g.enhancedEnglishDay1) {
     g.COURSE_DATA[0].subjects.english = g.enhancedEnglishDay1;
@@ -8582,7 +8582,7 @@ App.renderSubjectContent = function(dayData, subject) {
 
 </script>
 <script>
-﻿/* ========================================
+/* ========================================
    课本批注系统 v5.0
    功能：课文全文 + 教师旁注 + 重难点 + 思维延伸
    ======================================== */
@@ -8967,7 +8967,7 @@ App.renderSection = function(section, day, subject, sectionIdx) {
 
 </script>
 <script>
-﻿/* ========================================
+/* ========================================
    完整课文内容 + 教师批注
    含《春》全文、正负数讲解、字母音标
    ======================================== */
@@ -9277,7 +9277,7 @@ App.renderSection = function(section, day, subject, sectionIdx) {
 
 </script>
 <script>
-﻿/* ========================================
+/* ========================================
    Day 2-7 完整课文内容 + 教师批注
    ======================================== */
 (function(g) {
@@ -9594,7 +9594,7 @@ App.renderSection = function(section, day, subject, sectionIdx) {
 
 </script>
 <script>
-﻿/* ========================================
+/* ========================================
    注入课文内容到课程数据
    ======================================== */
 (function(g) {
@@ -9635,7 +9635,7 @@ App.renderSection = function(section, day, subject, sectionIdx) {
 
 </script>
 <script>
-﻿/* ========================================
+/* ========================================
    开篇故事内容库 - 每课学习动机导入
    ======================================== */
 (function(g) {
@@ -9827,7 +9827,7 @@ App.renderSection = function(section, day, subject, sectionIdx) {
 
 </script>
 <script>
-﻿/* ========================================
+/* ========================================
    注入开篇故事到课程数据
    ======================================== */
 (function(g) {
