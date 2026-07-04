@@ -517,6 +517,37 @@ body {
 .study-tip .text .strong { font-weight: 700; }
 
 </style>
+
+.daily-obj{margin:8px 12px;padding:12px 14px;background:linear-gradient(135deg,#EBF8FF,#F0FFF4);border:1px solid #BEE3F8;border-radius:14px}
+.daily-obj h3{font-size:.9rem;margin:0 0 8px;color:#2B6CB0}
+.obj-row{display:flex;align-items:flex-start;gap:8px;margin:6px 0;font-size:.82rem}
+.obj-icon{font-size:1.2rem;min-width:28px;text-align:center}
+.obj-text{flex:1;color:#2D3748;line-height:1.4}
+.diff-bar{display:flex;align-items:center;gap:8px;margin:6px 12px;padding:8px 12px;background:#FFFBEB;border-radius:10px;font-size:.8rem}
+.diff-stars{color:#ED8936;font-weight:700}
+.diff-tag{padding:2px 8px;border-radius:4px;font-size:.72rem;font-weight:600}
+.diff-hard{background:#FFF5F5;color:#E53E3E;border:1px solid #FED7D7}
+.diff-mid{background:#FFFFF0;color:#DD6B20;border:1px solid #FEEBC8}
+.diff-easy{background:#F0FFF4;color:#38A169;border:1px solid #C6F6D5}
+.timer-bar{margin:6px 12px;padding:10px 14px;background:linear-gradient(135deg,#1A202C,#2D3748);border-radius:12px;color:#fff;display:flex;align-items:center;justify-content:space-between}
+.timer-disp{font-size:1.4rem;font-weight:700;font-family:monospace;letter-spacing:2px}
+.timer-lbl{font-size:.72rem;color:#A0AEC0}
+.timer-btn{padding:6px 14px;border:none;border-radius:8px;font-size:.8rem;font-weight:600;cursor:pointer;margin-left:6px}
+.timer-go{background:#48BB78;color:#fff}
+.timer-pause{background:#ED8936;color:#fff}
+.timer-rst{background:#4A5568;color:#fff}
+.sum-card{margin:16px 12px;padding:16px;background:linear-gradient(135deg,#667EEA,#764BA2);border-radius:16px;color:#fff}
+.sum-hdr{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.sum-hdr h3{font-size:1rem;margin:0}
+.sum-date{font-size:.75rem;opacity:.8}
+.sum-stats{display:flex;gap:10px;margin-bottom:10px}
+.sum-stat{flex:1;background:rgba(255,255,255,.15);border-radius:10px;padding:10px 8px;text-align:center}
+.sum-stat .si{font-size:1.5rem}
+.sum-stat .sv{font-size:1.1rem;font-weight:700;margin:4px 0}
+.sum-stat .sl{font-size:.7rem;opacity:.8}
+.sum-act{display:flex;gap:8px;margin-top:10px}
+.btn-cp{flex:1;padding:10px;border:none;border-radius:10px;font-size:.85rem;font-weight:600;cursor:pointer;background:rgba(255,255,255,.9);color:#667EEA}
+
 <style>
 ﻿/* ========================================
    增强动画 & 可视化组件
@@ -1357,6 +1388,12 @@ body {
 </div>
 
 <div class="day-selector" id="daySelector"></div>
+
+<div class="daily-obj" id="dObj" style="display:none"><h3>🎯 今日学习目标</h3><div id="objC"></div></div>
+<div class="diff-bar" id="dBar" style="display:none"><span>⚡</span><span id="dLabel"></span><span class="diff-stars" id="dStars"></span><span id="dTags"></span></div>
+<div class="timer-bar" id="tBar" style="display:none"><div><div class="timer-lbl">⏱ 今日学习时长</div><div class="timer-disp" id="tDisp">00:00:00</div></div><div><button class="timer-btn timer-go" id="tGo">▶ 开始</button><button class="timer-btn timer-rst" id="tRst">↺</button></div></div>
+<div class="sum-card" id="sCard" style="display:none"><div class="sum-hdr"><h3>📊 今日总结</h3><div class="sum-date" id="sDate"></div></div><div class="sum-stats"><div class="sum-stat"><div class="si">⏱</div><div class="sv" id="sTime">0h 0m</div><div class="sl">学习时长</div></div><div class="sum-stat"><div class="si">✅</div><div class="sv" id="sTask">0/0</div><div class="sl">完成任务</div></div><div class="sum-stat"><div class="si">📖</div><div class="sv" id="sSub">0/3</div><div class="sl">已学科目</div></div></div><div class="sum-act"><button class="btn-cp" id="btnCp">📸 复制总结发给家长</button></div></div>
+
 
 <div class="subject-tabs" id="subjectTabs">
   <button class="subject-tab chinese active">📖 语文</button>
@@ -9813,6 +9850,41 @@ App.renderSection = function(section, day, subject, sectionIdx) {
 })();
 
 </script>
+
+<script>
+var ST={s:0,r:false,t:null,
+i:function(){var x=localStorage.getItem("st_"+App.currentDay);if(x)this.s=parseInt(x)||0;this.u();document.getElementById("tBar").style.display="flex"},
+t:function(){this.r?this.p():this.g()},
+g:function(){this.r=true;var b=document.getElementById("tGo");b.textContent="⏸ 暂停";b.className="timer-btn timer-pause";var z=this;this.t=setInterval(function(){z.s++;z.u();localStorage.setItem("st_"+App.currentDay,z.s);us()},1000)},
+p:function(){this.r=false;var b=document.getElementById("tGo");b.textContent="▶ 开始";b.className="timer-btn timer-go";if(this.t)clearInterval(this.t);localStorage.setItem("st_"+App.currentDay,this.s)},
+r:function(){if(confirm("确定重置计时？")){this.s=0;this.u();localStorage.setItem("st_"+App.currentDay,0);us()}},
+u:function(){var h=Math.floor(this.s/3600),m=Math.floor((this.s%3600)/60),s=this.s%60,p=function(n){return n<10?"0"+n:n};document.getElementById("tDisp").textContent=p(h)+":"+p(m)+":"+p(s)}
+};
+function re(){
+var d=App.currentDay,dd=App.getDayData(d);if(!dd)return;
+var sub=[{k:"chinese",i:"📖",n:"语文"},{k:"math",i:"📐",n:"数学"},{k:"english",i:"🌍",n:"英语"}],oh="";
+for(var j=0;j<sub.length;j++){var sd=dd.subjects[sub[j].k];if(!sd)continue;var os=null;for(var q=0;q<sd.sections.length;q++){if(sd.sections[q].type==="objectives"){os=sd.sections[q];break}}var ot=os&&os.items?os.items.map(function(x){return x.label}).join("；"):(sd.preview||"学习今日"+sub[j].n+"内容");oh+='<div class="obj-row"><div class="obj-icon">'+sub[j].i+'</div><div class="obj-text"><strong>'+sub[j].n+"：</strong>"+ot+"</div></div>"}
+document.getElementById("objC").innerHTML=oh;document.getElementById("dObj").style.display="block";
+var diff=dd.difficulty||"中等",stars="★★☆",tc="diff-mid";
+if(diff.indexOf("较难")>=0||diff.indexOf("难")>=0){stars="★★★";tc="diff-hard"}else if(diff.indexOf("易")>=0){stars="★☆☆";tc="diff-easy"}
+document.getElementById("dStars").textContent=stars;document.getElementById("dLabel").textContent="今日难度：";document.getElementById("dTags").innerHTML='<span class="diff-tag '+tc+'">'+diff+'</span> <span style="font-size:0.75rem;color:#718096;">重点：'+(dd.focus||"")+"</span>";document.getElementById("dBar").style.display="flex";
+ST.p();ST.i();us()
+}
+function us(){
+var d=App.currentDay,dd=App.getDayData(d);if(!dd)return;
+var tt=0,dt=0,ds=0,sub=["chinese","math","english"];
+for(var j=0;j<sub.length;j++){var sd=dd.subjects[sub[j]];if(!sd)continue;var st=0;for(var q=0;q<sd.sections.length;q++){if(sd.sections[q].type==="task"&&sd.sections[q].tasks)st+=sd.sections[q].tasks.length}tt+=st;if(App.progress&&App.progress[d]&&App.progress[d][sub[j]]){if(App.progress[d][sub[j]].length>0)ds++;dt+=App.progress[d][sub[j]].length}}
+var h=Math.floor(ST.s/3600),m=Math.floor((ST.s%3600)/60);document.getElementById("sTime").textContent=h+"h "+m+"m";document.getElementById("sTask").textContent=dt+"/"+tt;document.getElementById("sSub").textContent=ds+"/3";document.getElementById("sDate").textContent=dd.date||"";document.getElementById("sCard").style.display="block"
+}
+setTimeout(function(){
+var b1=document.getElementById("tGo"),b2=document.getElementById("tRst"),b3=document.getElementById("btnCp");
+if(b1)b1.onclick=function(){ST.t()};if(b2)b2.onclick=function(){ST.r()};
+if(b3)b3.onclick=function(){var d=App.currentDay,t="📊 暑期学习第"+d+"天\n⏱ "+document.getElementById("sTime").textContent+"\n✅ "+document.getElementById("sTask").textContent+"\n📖 "+document.getElementById("sSub").textContent+"科\n📚 两江巴蜀中学七年级预习";if(navigator.clipboard){navigator.clipboard.writeText(t).then(function(){alert("✅ 已复制！微信粘贴发给家长")})}else{alert(t)}};
+// Poll every 3 seconds for day change
+setInterval(function(){if(App.currentDay!==ST._day){ST._day=App.currentDay;re()}},3000);
+},300);
+</script>
+
 </body>
 </html>
 
